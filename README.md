@@ -1,2 +1,1 @@
-# theory-of-science
-Theory of Sience
+# Theory of Sience
