@@ -168,4 +168,4 @@ Zwei Kerne dieser Reflexion könnten in den Essay zur Differenzschrift eingewobe
 - Bezug: Essay „Subjekt-Objekt und die Identität der Identität und der Nichtidentität“, v1
 - Quelle: Hegel, Werke Band 2 (Suhrkamp 1986), zitiert als W 2; Seitenzahlen nach eingedruckter Paginierung
 - Rechnung: Intervallmodell (dyadische Teilung, affine Abbildung, Anteile) in Python mit sympy und fractions ausgeführt, Ergebnisse in Abschnitt 4
-- Status: Erstfassung; Vorhaben zur Einwebung angekündigt, wartet auf GO
+- Status: Erstfassung; Vorhaben nach GO in den Essay v2 eingewoben (Streckenmodell in 2.6, Kantische Herkunft in 2.7)
