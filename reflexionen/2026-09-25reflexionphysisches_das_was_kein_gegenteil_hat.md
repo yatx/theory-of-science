@@ -78,7 +78,7 @@ Der Aufsatz hat die Dialektik am Gewicht enden lassen. Das war richtig für die 
 
 Kern: das Maß. Text: »Die Gabel und ihre Aufhebung«, Abschnitt 7 (Wo die Aufhebung endet). Was es sagen würde: ein Absatz nach der Bestimmung von Qualität und Quantität, der die drei Schnitte aus »Rest und Gewicht« als Knotenlinie von Maßverhältnissen benennt und festhält, dass die Dialektik der Aufhebung am Gewicht endet und dort die Figur des Maßes beginnt, mit dem Wettlauf von Rest und Gewicht als Mechanismus der Knoten. Umfang rund 250 Wörter, Ebene Lesart, Statustafel um eine Deutung ergänzt (Knotenlinie), Quellen um Hegel, Lehre vom Sein, Das Maß. Zweiter Kern, nachrangig: die Verschiebung des Vorzeichens von der Energie auf die Ladung (Dirac), als Satz in Abschnitt 7 oder als Anmerkung; Umfang rund 120 Wörter, Ebene Befund mit Deutung. Die Schraube und die Zeit bleiben in der Reflexion; sie sind für den Aufsatz zu weit.
 
-Erwarte GO.
+GO erteilt (25.09.2026); eingewoben in die_gabel_und_ihre_aufhebung_v03.tex, Abschnitt 7.
 
 ---
 
@@ -90,4 +90,4 @@ Erwarte GO.
 - Datum: 2026-09-25
 - Anlass: »Die Gabel und ihre Aufhebung« v02, Abschnitt 7 und Schluss
 - Sachbezug: Spektrumsbedingung; Satz von der positiven Energie (Schoen und Yau 1979, Witten 1981); Dirac 1928–1931, Anderson 1932, Stückelberg und Feynman; Massendefekt; Aufbau des Physischen, Kapitel Rest und Gewicht (drei Schnitte); Bott 1959; Hegel, Lehre vom Sein: Quantität, Maß, Knotenlinie; wahre und schlechte Unendlichkeit
-- Status: Reflexion, nicht eingewoben; Vorhaben oben, GO ausstehend
+- Status: eingewoben (v03, Abschnitt 7: Vorzeichen-Verschiebung, Knotenlinie); Schraube und Zeit verbleiben hier
