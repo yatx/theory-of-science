@@ -1,0 +1,26 @@
+% GERECHNET von erzeuge_bausteine.py — Geraden aus den Produkttripeln der Oktaven, Blade-Beschriftung aus a⊕b=c, nicht von Hand
+\begin{tikzpicture}[scale=1.25,pt/.style={circle,draw,fill=white,inner sep=1pt,font=\scriptsize,minimum size=7mm}]
+\draw[thick,zeit] (0.000,2.000)--(-1.732,-1.000);
+\draw[thick,zeit] (0.000,2.000)--(1.732,-1.000);
+\draw[thick,raum] (0.000,2.000)--(-0.000,-1.000);
+\draw[thick,zeit] (-1.732,-1.000)--(1.732,-1.000);
+\draw[thick,raum] (-1.732,-1.000)--(0.866,0.500);
+\draw[thick,raum] (-0.866,0.500)--(1.732,-1.000);
+\draw[thick,ferm] (0,0) circle (1.000);
+\node[pt] at (0.000,2.000) {$e_1$};
+\node[font=\tiny,grau] at (0.000,2.420) {$e_1$};
+\node[pt] at (-1.732,-1.000) {$e_2$};
+\node[font=\tiny,grau] at (-1.732,-1.420) {$e_2$};
+\node[pt] at (1.732,-1.000) {$e_4$};
+\node[font=\tiny,grau] at (1.732,-1.420) {$e_3$};
+\node[pt] at (-0.866,0.500) {$e_3$};
+\node[font=\tiny,grau] at (-0.866,0.920) {$e_1e_2$};
+\node[pt] at (-0.000,-1.000) {$e_6$};
+\node[font=\tiny,grau] at (-0.000,-1.420) {$e_2e_3$};
+\node[pt] at (0.866,0.500) {$e_5$};
+\node[font=\tiny,grau] at (0.866,0.920) {$e_1e_3$};
+\node[pt] at (0.000,0.000) {$e_7$};
+\node[font=\tiny,grau] at (0.000,-0.450) {$e_1e_2e_3$};
+\node[font=\scriptsize,align=left,anchor=west] at (2.6,0.9) {sieben Punkte: die Einheiten $e_1\ldots e_7$ der Oktaven,\\darunter in Grau dieselbe Stelle als Blade von $\Cl(0,3)$};
+\node[font=\scriptsize,align=left,anchor=west] at (2.6,-0.2) {sieben Geraden (der Kreis eingeschlossen):\\Produkttripel $e_ie_j=\pm e_k$ der Oktaven und zugleich\\Produkttripel der Blades; Regel $a\oplus b=c$ auf beiden Seiten};
+\end{tikzpicture}

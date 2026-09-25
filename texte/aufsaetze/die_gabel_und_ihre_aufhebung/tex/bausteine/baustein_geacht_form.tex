@@ -1,0 +1,18 @@
+% GERECHNET von erzeuge_bausteine.py — Gruppe, Ordnungen und Untergruppen aus der Erzeugerrelation, nicht von Hand
+\begin{tikzpicture}[>=Stealth,el/.style={circle,draw,fill=white,inner sep=1.5pt,font=\small,minimum size=8mm}]
+\draw[thick,zeit] (0,0) circle (1.1);
+\draw[thick,raum,rounded corners=8pt] (-3.9,1.7) rectangle (0.6,-1.7);
+\draw[thick,ferm,rounded corners=8pt] (-0.6,1.7) rectangle (3.9,-1.7);
+\node[el] at (0,1.1) {$1$};
+\node[el] at (0,-1.1) {$-1$};
+\node[el] at (1.1,0) {$\omega$};
+\node[el] at (-1.1,0) {$-\omega$};
+\node[el] at (-3.2,1.1) {$e_1$};
+\node[el] at (-3.2,-1.1) {$-e_1$};
+\node[el] at (3.2,1.1) {$e_2$};
+\node[el] at (3.2,-1.1) {$-e_2$};
+\node[font=\scriptsize,zeit,anchor=north] at (0,-1.85) {Umlauf: $1 \to \omega \to -1 \to -\omega\to 1$ (Takt 4)};
+\node[font=\scriptsize,raum,anchor=south] at (-2.2,1.8) {Wechsel $e_1$ (Takt 2)};
+\node[font=\scriptsize,ferm,anchor=south] at (2.2,1.8) {Wechsel $e_2$ (Takt 2)};
+\node[font=\scriptsize,grau,anchor=north] at (0,-2.4) {Schnitt je zweier Gevierte: der Zweier $\{1,-1\}$; acht Glieder, drei Gevierte, gerechnet};
+\end{tikzpicture}
