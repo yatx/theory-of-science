@@ -1,0 +1,60 @@
+\chapter{Maß und Unmaß}
+
+\section{Weile und Weite}
+
+Ute Guzzoni hat dem Wort \zitat{Weile} nachgefragt, das eine Phase der Zeit nennt, ohne sie zu messen. Eine Weile ist nicht eine Abfolge von Jetztpunkten, sondern Gegenwärtigkeit ohne Verlauf, erfüllte Zeit. Ihre Dauer ist nur qualitativ bestimmt; es gibt keine halbe Weile und keine doppelte. Grimm hat es gewusst: die Formel \zitat{eine weile} macht ihr Glück durch ihre Unbestimmtheit. Und die Weile hat, gegen den Fluss der Zeit gehalten, etwas von einer Fläche: \zitat{Diesem Fluß der Zeit gegenüber erscheint die Weile eher als eine Fläche oder ein Raum, sie verläuft gerade nicht linear.}\footnote{Guzzoni, Weile und Weite, Kapitel zur Weile.}
+
+Das Gegenstück ist die Weite. Höhe, Breite und Länge sind messbar; die Weite ist es nicht. Die Weite ist der Raum, wie er erfahren wird, wenn er nicht vermessen wird: das Offene, in das man hinausschaut, die Gegend, in der man sich aufhält. Guzzoni stellt beide zusammen und findet in ihnen ein ursprüngliches Ineinander von Zeit und Raum, das vor jeder Metrik liegt. Der Ort ist der Augenblick des Raumes; die Gegend entspricht der Weile.\footnote{Guzzoni, Weile und Weite, Kapitel zu Ort und Gegend.} Das sind keine Bilder. Es ist die Erfahrung, dass die Zeit, wenn sie weilt, Raum gewinnt, und dass der Raum, wenn er Gegend ist, Zeit hat.
+
+Die Richtung dieses Übergangs ist bemerkenswert. Heidegger: \zitat{Die Zeit wird zum Raum.} Wagner: \zitat{Zum Raum wird hier die Zeit.} Hölderlin: \zitat{Zeit eilt hin zum Ort.} Guzzoni versammelt diese Sätze und bemerkt, dass sie alle in dieselbe Richtung gehen, und nicht umgekehrt; niemand sagt, der Raum werde zur Zeit. \zitat{In der Erfahrung scheint die Zeit das Vorrangige und Bestimmende zu sein. Und doch ist sie immer schon eingeräumt, mit ihrem Ablauf wie mit ihrem Weilen und Verweilen skandiert sie den Raum, in den sie hineingehört.}\footnote{Guzzoni, Weile und Weite, Kapitel zu Heidegger.} Das Unmaß, die Weile und die Weite, ist beiden gemeinsam und geht dem Maß voraus. Aber im Unmaß hat die Zeit den Vorrang und der Raum die Aufnahme. Der Raum räumt ein, was die Zeit bringt.
+
+\section{Topologie vor Metrik}
+
+Reichenbach kommt von der entgegengesetzten Seite, von der Messung, und findet dieselbe Reihenfolge. Die Metrik des Raumes beruht auf einer Zuordnungsdefinition: Man muss festlegen, welcher Körper als starr gilt, welche Kraft als universell und deshalb wegzudefinieren. Die Geometrie, die sich ergibt, ist die Geometrie plus die Festsetzung; beides zusammen ist empirisch, keines allein.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,3--\S\,8.} Vor der Metrik liegt die Topologie: die Nachbarschaftsverhältnisse, das Zwischen, die Ordnung. Und die Topologie des Raumes wird, wie das vorige Kapitel zeigte, durch das Nahwirkungsprinzip bestimmt, also durch die Kausalität, also durch die Zeit. Die Metrik kommt zuletzt, und sie kommt bei Reichenbach aus der Gravitation: Das metrische Feld ist das Gravitationsfeld, die Geometrie wird zum Ausdruck der Schwere.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,38--\S\,40.}
+
+Für die Zeit gilt dasselbe. Die Metrik der Zeit, welche Uhr gleichförmig läuft, ist Zuordnungsdefinition. Die Ordnung der Zeit aber, Früher und Später, ist keine Definition, sondern durch die Kausalkette gegeben. Damit ist die Lage der beiden gegenüber dem Maß nicht symmetrisch. Beide haben eine definitorische Metrik. Aber nur die Zeit hat eine nicht-definitorische Ordnung, und die Ordnung des Raumes ist von ihr abgeleitet.
+
+\section{Das Lichtjahr}
+
+Reichenbach spricht die Ableitung aus, zuerst bei der Lichtgeometrie: Die Raummessung \zitat{läßt sich zurückführen auf die Zeitmessung; die Zeit ist gegenüber dem Raum das logisch Primäre}.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,27.} Und dann, bei der Raum-Zeit-Ordnung, in aller Schärfe: Das \zitat{›Lichtjahr‹ der Astronomen, ursprünglich aus reinen Zweckmäßigkeitsgründen eingeführt, trifft gerade die logische Urform aller Längenmessung. Die Zeit und durch sie die Kausalität liefert das Maß und die Ordnung des Raumes}.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,42.}
+
+Wie das geht, zeigt ein einziges Verfahren. Von einer Uhr geht ein Lichtsignal aus, wird an einem entfernten Körper reflektiert und kehrt zurück. Die Uhr misst die Zeit $\Delta t$ zwischen Abgang und Rückkehr. Die Entfernung des Körpers ist dann $\tfrac12\, c\, \Delta t$, wobei $c$ nicht gemessen, sondern gesetzt wird, denn die Lichtgeschwindigkeit ist die Einheit, in der Längen in Zeiten übersetzt werden. Man braucht zur Längenmessung also nur eine Uhr und das Licht. Man braucht keinen Maßstab.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1,>=Stealth]
+% Weltlinie der Uhr
+\draw[very thick] (0,-0.3) -- (0,4.6);
+\node[above] at (0,4.6) {\small Uhr};
+% Weltlinie des fernen Körpers
+\draw[thick,gray] (3,-0.3) -- (3,4.6);
+\node[above] at (3,4.6) {\small ferner Körper};
+% Signal hin und zurück
+\draw[->,thick] (0,0.5) -- (3,2.2);
+\draw[->,thick] (3,2.2) -- (0,3.9);
+\fill (0,0.5) circle (0.07) node[left] {\small $t_1$};
+\fill (3,2.2) circle (0.07) node[right] {\small $t_2$};
+\fill (0,3.9) circle (0.07) node[left] {\small $t_3$};
+% Zeitintervall
+\draw[<->] (-1.1,0.5) -- (-1.1,3.9);
+\node[left] at (-1.1,2.2) {\small $\Delta t = t_3 - t_1$};
+% Länge
+\draw[<->,dashed] (0,-0.15) -- (3,-0.15);
+\node[below] at (1.5,-0.2) {\small $\ell = \tfrac12\,c\,\Delta t$};
+\node[align=center] at (1.5,-1.1) {\small Länge aus Zeit: kein Maßstab, nur Uhr und Licht};
+\end{tikzpicture}
+\caption{Das Lichtjahr als Urform der Länge. Ein Signal geht bei $t_1$ ab, wird reflektiert und kehrt bei $t_3$ zurück. Die Entfernung ist die halbe Laufzeit, in Lichteinheiten. Was der Raum an Maß hat, wird von einer Uhr abgelesen (nach Reichenbach).}
+\label{abb:lichtjahr}
+\end{figure}
+
+Reichenbach selbst setzt dem Verfahren eine Grenze, und sie muss mitgenannt werden. Die Lichtgeometrie erreicht nur eine Klasse von Raumsystemen, die sich durch die Wahl des Zeitparameters unterscheiden; um unter ihnen das eine auszuzeichnen, das der Raum der Körper ist, braucht man einen materiellen Messkörper. Der Raum gibt sich also nicht restlos aus der Zeit her. Es bleibt ein Rest, und der Rest ist der Körper, dessen Starrheit man voraussetzt. Was das für den Raum bedeutet, wird am Ende zu bedenken sein.
+
+\section{Der Abstand ohne Unterschied}
+
+Brentano hat eine dritte Weise entdeckt, in der das Maß der Zeit anders ist als das des Raumes. Zwei Punkte im Raum, die voneinander entfernt sind, unterscheiden sich sachlich: Hier ist nicht Dort, so wie Rot nicht Blau ist. Der räumliche Abstand ist eine Differenz des Gegenstandes. Zwei Punkte in der Zeit, die voneinander entfernt sind, brauchen sich sachlich nicht zu unterscheiden. Eine Melodie kann wiederkehren, ein Ton kann derselbe sein, ein Schlaf kann ohne jede Veränderung vergehen. Der zeitliche Abstand ist keine Differenz des Gegenstandes, sondern eine Differenz der Weise, wie derselbe Gegenstand anerkannt wird. Deshalb ist die Raumanschauung ein Kontinuum von Objekten, die Zeitanschauung ein Kontinuum von Modi.\footnote{Brentano, Untersuchungen, Kapitel VIII, Das Zeitliche als Relatives.}
+
+Das Maß der Zeit misst also nichts am Gemessenen. Es misst den Abstand zwischen zwei Anerkennungen desselben. Das ist der Grund, warum es keine Wissenschaft der Zeit gibt, die der Geometrie entspräche. Hegel hat es gesagt: Die Arithmetik, die man der Zeit zuordnen möchte, reduziert sie auf das tote Eins; die Zeit lässt sich nicht so konstruieren, wie die Geometrie den Raum konstruiert.\footnote{Bonsiepen, Hegels Raum-Zeit-Lehre, zu Enzyklopädie \S\,259.} Und Aristoteles hat die Zeit als Zahl der Bewegung bestimmt, nicht als Größe: Die Zahl umfasst die Bewegung, wie das Gefäß den Körper umfasst, aber sie ist nicht dessen Ausdehnung. Fink hat daraus gefolgert, dass bei Aristoteles der Raum endlich, die Zeit un-endlich ist, und dass diese Verschiedenheit in der Fundierung, Größe, Bewegung, Zeit, unerklärt bleibt.\footnote{Fink, Frühgeschichte, Kapitel zur aristotelischen Zeit-Analytik.}
+
+\section{Ergebnis}
+
+Die dritte Asymmetrie hat zwei Seiten. Auf der Seite des Maßes kommt das Maß des Raumes aus der Zeit: Die Ordnung des Raumes ist der Sinn der Kausalität, seine Metrik wird von Uhren abgelesen, und was er darüber hinaus an Maß hat, hat er von einem Körper, den man als starr voraussetzt. Auf der Seite des Unmaßes, der Weile und der Weite, sind Zeit und Raum gemeinsam vor aller Metrik; aber auch dort ist die Zeit das Bewegende und der Raum das Aufnehmende, die Zeit wird zum Raum, nicht der Raum zur Zeit. In beiden Fällen dasselbe Verhältnis: Die Zeit gibt, der Raum nimmt auf. Und in beiden Fällen ein Rest, den der Raum nicht hergibt: der starre Körper, das Eingeräumtsein.

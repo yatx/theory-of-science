@@ -1,0 +1,62 @@
+\chapter{Hier und Jetzt}
+
+\section{Finks Einwand}
+
+Fink hat Hegels sinnlicher Gewissheit einen Fehler vorgeworfen, der genau die Parallelisierung betrifft: Hegel behandle das Hier wie das Jetzt. Beide seien Allgemeine, die sich in jedem Einzelnen verlören. Aber, sagt Fink, das Jetzt ist weltweit. Es ist allen Dingen gemeinsam, es ist die Gleichzeitigkeit, in der alles, was ist, beisammen ist. Das Hier dagegen ist je meines. Es ist der Ort, von dem aus ich sehe, und ein anderes Hier ist für mich ein Dort. Die \zitat{fälschliche Parallelisierung von Hier und Jetzt} verdeckt, dass die Zeit in ihrer Dimension der Gleichzeitigkeit \zitat{den Sinn räumlicher Koexistenz} gewinnt, während der Raum in seinem Hier gar nichts Gemeinsames hat.\footnote{Fink, Frühgeschichte, Kapitel zu Parmenides und zur Weltganzheit.}
+
+Der Einwand ist stark, aber er hat eine merkwürdige Folge. Er macht die Zeit gerade dort zum Gemeinsamen, wo sie am ehesten dem Raum gleicht: im Nebeneinander des Gleichzeitigen. Und er macht den Raum gerade dort zum Eigenen, wo er am wenigsten Raum ist: im Hier, das kein Dort ist. Fink hat also nicht die Zeit gegen den Raum ausgespielt, sondern den raumhaften Aspekt der Zeit gegen den zeithaften Aspekt des Raumes.
+
+\section{Kochs Argument}
+
+Koch nähert sich derselben Frage von der Logik der Einzeldinge her. Es gibt überabzählbar viele reelle Zahlen, aber nur abzählbar viele Sätze; also lassen sich nicht alle Zahlen spezifizieren, und das ist verschmerzbar. Bei Partikularien, den raumzeitlichen Einzeldingen, ist es nicht verschmerzbar: Sie müssen wenigstens teilweise spezifizierbar sein, sonst sind sie keine Gegenstände. Raum und Zeit aber, die Bedingung ihrer Spezifizierbarkeit, sind zugleich ihre Gefahr, denn Raum und Zeit lassen Symmetrien und Wiederholungen zu. Ein spiegelsymmetrisches Universum enthält zu jedem Ding einen Doppelgänger, der ihm qualitativ gleicht und sich von ihm nur numerisch unterscheidet. \zitat{Rechts ist da, wo der Daumen links ist}, sagt man im Scherz; hier wäre es ernst, denn keine Beschreibung könnte das eine vom anderen unterscheiden.\footnote{Koch, Wozu noch Erste Philosophie?, Abschnitt zur Spezifizierbarkeit von Partikularien.}
+
+Kochs Auflösung: Von außen, für eine standpunktneutrale Betrachterin, sind die Doppelgänger unspezifizierbar. Von innen, für einen Betrachter in der Welt, sind sie spezifizierbar durch Indexikalität: ich, hier, jetzt, dieses. Orte und Augenblicke müssen also irreduzibel indexikalischen Charakter haben, und das heißt: Es muss ein Partikulare geben, das sich a priori selbst individuiert und lokalisiert. \zitat{Also sind wir selbst die notwendige Garantie der indexikalischen Spezifizierbarkeit von Partikularien.} Die raumzeitliche Wirklichkeit ist damit nicht subjektiv, aber sie ist \zitat{an ihr selber Erscheinung}: Sie ist so verfasst, dass sie nur von einem Standpunkt in ihr bestimmbar ist.\footnote{Koch, Erste Philosophie, ebd.}
+
+Man sieht sofort, dass Koch das Hier und das Jetzt gleich behandelt. Beide sind indexikalisch, beide kommen von dem Partikularen, das wir sind. Fink würde einwenden: Das Hier ja, das Jetzt nein; das Jetzt ist weltweit, es braucht keinen Standpunkt. Wer hat recht?
+
+\section{Die Entscheidung der Physik}
+
+Die Frage lässt sich entscheiden, und zwar an der Stelle, die Reichenbach am genauesten untersucht hat: der Gleichzeitigkeit. Zwei Ereignisse an verschiedenen Orten gleichzeitig zu nennen, setzt voraus, dass man Uhren an verschiedenen Orten verglichen hat. Der Vergleich geschieht durch Signale, und das schnellste Signal ist das Licht. Ein Lichtsignal, das zum Zeitpunkt $t_1$ abgeht, an einem entfernten Ort reflektiert wird und zum Zeitpunkt $t_3$ zurückkehrt, war zu einem Zeitpunkt $t_2$ dort. Welchem? Jeder Zeitpunkt $t_2 = t_1 + \varepsilon\,(t_3 - t_1)$ mit $0 < \varepsilon < 1$ ist zulässig; die Wahl $\varepsilon = \tfrac12$ ist ausgezeichnet nur durch die Symmetrie und Transitivität, die sie der Definition verleiht, nicht durch eine Tatsache.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,19.} Die Gleichzeitigkeit ferner Ereignisse ist eine Zuordnungsdefinition. Was an ihr Tatsache ist, ist etwas Negatives: \zitat{Gleichzeitigkeit heißt Ausgeschaltetheit des Wirkungszusammenhangs}.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,21.} Gleichzeitig sind Ereignisse, zwischen denen keine Wirkung laufen kann, und das ist eine ganze Klasse, nicht ein Schnitt.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+% Achsen
+\draw[->] (-3.2,0) -- (3.4,0) node[right] {\small $x$};
+\draw[->] (0,-2.6) -- (0,3.2) node[above] {\small $t$};
+% Lichtkegel
+\fill[gray!12] (0,0) -- (2.6,2.6) -- (-2.6,2.6) -- cycle;
+\fill[gray!12] (0,0) -- (2.4,-2.4) -- (-2.4,-2.4) -- cycle;
+\draw[gray] (-2.6,-2.6) -- (2.6,2.6);
+\draw[gray] (2.6,-2.6) -- (-2.6,2.6);
+% Faserbündel: mehrere zeitartige Weltlinien
+\foreach \x in {-2.4,-1.6,1.6,2.4} {\draw[thin,gray!70] (\x,-2.4) .. controls (\x+0.15,-0.5) and (\x-0.15,0.8) .. (\x,2.9);}
+% eigene Weltlinie (Faser)
+\draw[very thick] (0,-2.4) .. controls (0.35,-0.8) and (-0.25,1.2) .. (0.1,2.9);
+\fill (0,0) circle (0.07) node[below right] {\small Jetzt};
+% Gleichzeitigkeitsflächen mit verschiedenen epsilon
+\draw[dashed] (-3,-0.7) -- (3,0.7);
+\draw[dashed] (-3,0) -- (3,0);
+\draw[dashed] (-3,0.7) -- (3,-0.7);
+\node[right] at (3.05,0.75) {\scriptsize $\varepsilon\neq\tfrac12$};
+\node[right] at (3.05,-0.75) {\scriptsize $\varepsilon\neq\tfrac12$};
+\node[right] at (3.05,0.15) {\scriptsize $\varepsilon=\tfrac12$};
+% Beschriftungen
+\node at (0,2.3) {\small früher $\to$ später};
+\node at (0,-2.1) {\small};
+\node[align=center] at (-1.9,1.5) {\scriptsize zeitfolge-\\[-2pt]\scriptsize unbestimmt};
+\node[align=center] at (1.9,-1.5) {\scriptsize zeitfolge-\\[-2pt]\scriptsize unbestimmt};
+\node[below] at (0.9,-2.55) {\small Nebeneinander der Fasern};
+\node[right] at (0.2,2.75) {\small Faserrichtung};
+\end{tikzpicture}
+\caption{Faser und Nebeneinander. Die dick gezeichnete Weltlinie ist die Faser, längs deren dieselbe Materie ihre Zustände durchläuft (Genidentität); die dünnen Linien sind die Fasern anderer Dinge, deren Nebeneinander der Raum ist. Die gestrichelten Geraden sind mögliche Gleichzeitigkeitsflächen durch das Jetzt; welche von ihnen gilt, ist Definition ($\varepsilon$), was zwischen ihnen liegt, ist die Klasse der Ereignisse ohne Wirkungszusammenhang (nach Reichenbach).}
+\label{abb:faser}
+\end{figure}
+
+Das entscheidet zwischen Fink und Koch. Finks weltweites Jetzt ist genau die Gleichzeitigkeit, und die Gleichzeitigkeit ist genau der Aspekt der Zeit, in dem sie Koexistenz, also Raum ist. Dieser Aspekt ist definitorisch. Was an der Zeit nicht definitorisch ist, ist die Ordnung längs der Weltlinie: Zwischen zwei Ereignissen an demselben Ding gibt es ein Früher und Später, das durch keine Definition umgekehrt werden kann. Das Jetzt, das nicht Konvention ist, ist also das Jetzt an der Faser, und die Faser ist die Weltlinie eines Dinges, in unserem Fall des Leibes. Das ist Kochs Jetzt. Fink hat also recht, dass die Gleichzeitigkeit weltweit ist; er hat unrecht, dass sie die Zeit ist. Sie ist die Zeit in der Gestalt des Raumes. Koch hat recht, dass das Jetzt vom Partikularen kommt; und die Physik sagt ihm, welches Jetzt das ist: das der Eigenzeit.
+
+\section{Das Hier, noch einmal}
+
+Umgekehrt lässt sich nun auch das Hier genauer fassen. Finks \zitat{je meines} ist richtig, aber es sagt nicht, woher das Hier seine Auszeichnung hat. Der Raum, als Nebeneinander der Fasern, kennt keinen ausgezeichneten Punkt; das war der Befund des vorigen Kapitels. Das Hier ist der Punkt, an dem eine Faser den Raum durchstößt, und zwar diejenige Faser, längs deren ich mich erneuere. Das Hier ist also die Spur einer Zeit im Raum. Hegels Formel vom Ort als räumlichem Jetzt und Kochs Formel vom Leib als der Garantie der Spezifizierbarkeit sagen beide dies.
+
+Das Ergebnis ist eine Kreuzung, wie schon bei der Grenze. Das Jetzt, das allen gemeinsam ist, ist Raum. Das Hier, das nur meines ist, ist Zeit. Die Parallelisierung von Hier und Jetzt, die Fink Hegel vorwirft, ist deshalb nicht bloß falsch; sie ist die Verwechslung zweier Kreuzungen, die einander spiegeln. Die Asymmetrie tritt genau dann hervor, wenn man in jedem der beiden fragt, was an ihm vom anderen stammt.

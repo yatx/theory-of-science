@@ -1,0 +1,95 @@
+\chapter{Richtung}
+
+\section{Die Faserrichtung}
+
+Reichenbach baut die Ordnung der Zeit nicht auf ein Zeitgefühl, sondern auf die Kausalität. Sein Kennzeichenprinzip lautet: Wenn ein Ereignis $E_1$ Ursache eines Ereignisses $E_2$ ist, dann erscheint eine kleine Veränderung an $E_1$ auch an $E_2$, aber nicht umgekehrt. Man kann das Kennzeichen an der Ursache anbringen und es an der Wirkung wiederfinden; an der Wirkung angebracht, findet man es an der Ursache nicht. Diese Asymmetrie braucht keinen Zeitbegriff, sie definiert ihn. Früher ist, was das Kennzeichen abgibt, später, was es empfängt.\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,21.}
+
+Auf dieser Grundlage wird die Zeit zu dem, was der Raum nicht ist: \zitat{Eine hinzukommende wesentliche Eigenschaft der Zeit ist die Auszeichnung eines Richtungssinnes; und dieser wieder beruht darauf, daß die Zeit --- und nur sie --- die Dimension der Wirkungslinien ist [\ldots]. So ist die Zeit die Faserrichtung der Mannigfaltigkeit, diejenige Richtung, in der sich die Kausalketten erstrecken, während der Raum nur das Nebeneinander der Faserbündel aufnimmt.}\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,43.} Ein ausgezeichneter Spezialfall der Kausalkette ist die Weltlinie eines Dinges, das mit sich identisch bleibt; Reichenbach nennt diese Beziehung Genidentität. Längs der Zeit liegen Zustände desselben Dinges, längs des Raumes liegen verschiedene Dinge. Das ist die zweite Asymmetrie in ihrer physikalischen Form: Die Zeit verbindet, was eines ist, der Raum trennt, was vieles ist.
+
+Was Reichenbach nicht löst, ist die Einsinnigkeit. Dass die Zeit \emph{fortschreitet}, dass es einen Unterschied macht, in welcher der beiden Richtungen die Faser durchlaufen wird, ist durch das Kennzeichenprinzip zwar definierbar, aber die Definition trifft nicht das Gemeinte. \zitat{Fortschreiten der Zahlen heißt nichts anderes als Richtung vom kleineren zum größeren. Mit Fortschreiten der Zeit meinen wir aber etwas Selbständiges, ein evidentes Erlebnis und zugleich eine Aussage über die Wirklichkeit.}\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,21.} Das Problem wird vertagt und im Buch nicht wieder aufgenommen. Es bleibt auch hier offen; es wird aber am Ende deutlich werden, warum es nicht auf der Ebene der Physik lösbar ist.
+
+\section{Der Raum hat keine Richtung}
+
+Dass der Raum aus sich keine Richtung hat, ist eine alte Einsicht mit vielen Zeugen. Hegel sagt, die drei Dimensionen des Raumes, Höhe, Länge und Breite, seien nur der Zahl nach unterschieden; welche man Höhe nennt, ist gleichgültig. Bonsiepen hat gezeigt, dass Hegel dabei Aristoteles vor Augen hat, der erklärt, nicht in jedem Körper sei ein Oben und Unten, Rechts und Links, Vorn und Hinten zu finden, sondern nur in beseelten Körpern; die Richtungen sind mit dem Ursprung der Bewegung verknüpft.\footnote{Bonsiepen, Hegels Raum-Zeit-Lehre, zu Enzyklopädie \S\,255 und De caelo II.} Martić hält an Newton dieselbe Sache fest: Newton unterscheidet die Anisotropie der Zeit, die eine feste Folge aufweist, von der Isotropie des Raumes, dessen Teile keine Reihenfolge haben.\footnote{Martić, Zeit und Raum, Kapitel zu Newton.} Und Kant hat 1768 an den inkongruenten Gegenstücken, der linken und der rechten Hand, gezeigt, dass die Unterscheidung von rechts und links durch keine Beschreibung der inneren Verhältnisse eines Körpers zu gewinnen ist; er schloss daraus auf einen absoluten Raum, den er später als Idee einer Regel verstand.\footnote{Schneider, Raum-Zeit-Problem, Kapitel zum absoluten Raum; Martić, Zeit und Raum, zu den Gegenden im Raume.}
+
+Kochs Argument aus dem vorigen Kapitel ist die Zuspitzung: In einem symmetrischen Universum ist das rechte Ding vom linken nicht zu unterscheiden, außer für einen, der drinsteht. Der Raum, das reine Nebeneinander, kennt weder ein Rechts noch ein Oben noch ein Vorn.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1,>=Stealth]
+% Spiegelachse
+\draw[thick,dashed] (0,-2.2) -- (0,2.6);
+\node[above] at (0,2.6) {\small Spiegelebene};
+% Linke Figur
+\begin{scope}[xshift=-2.4cm]
+\draw[thick] (0,0.8) circle (0.35);
+\draw[thick] (0,0.45) -- (0,-0.6);
+\draw[thick] (0,0.2) -- (-0.7,-0.2);
+\draw[thick] (0,0.2) -- (0.7,0.4);
+\draw[thick] (0,-0.6) -- (-0.4,-1.4);
+\draw[thick] (0,-0.6) -- (0.4,-1.4);
+\node[below] at (0,-1.5) {\small $A$};
+\draw[->,thick] (0.75,0.4) -- (1.3,0.4) node[right] {\scriptsize \zitat{rechts}};
+\end{scope}
+% Rechte Figur (gespiegelt)
+\begin{scope}[xshift=2.4cm]
+\draw[thick] (0,0.8) circle (0.35);
+\draw[thick] (0,0.45) -- (0,-0.6);
+\draw[thick] (0,0.2) -- (0.7,-0.2);
+\draw[thick] (0,0.2) -- (-0.7,0.4);
+\draw[thick] (0,-0.6) -- (0.4,-1.4);
+\draw[thick] (0,-0.6) -- (-0.4,-1.4);
+\node[below] at (0,-1.5) {\small $A'$};
+\draw[->,thick] (-0.75,0.4) -- (-1.3,0.4) node[left] {\scriptsize \zitat{rechts}};
+\end{scope}
+% Außenbetrachter
+\node[align=center] at (0,-2.9) {\small von außen: $A$ und $A'$ qualitativ gleich, nur numerisch verschieden\\[-1pt]\small von innen: \zitat{hier} und \zitat{dort}, \zitat{ich} und \zitat{er}};
+\end{tikzpicture}
+\caption{Das symmetrische Universum. Zu jedem Ding ein Doppelgänger, dem keine Beschreibung ein Merkmal geben kann, das der andere nicht auch hätte. Die Unterscheidung gelingt nur indexikalisch, von einem Standpunkt in der Welt (nach Koch). Der Raum selbst liefert kein Rechts und kein Links.}
+\label{abb:doppelgaenger}
+\end{figure}
+
+\section{Woher die Richtungen des Raumes kommen}
+
+Wenn der Raum keine Richtungen hat, aber die Erfahrung sie kennt, dann müssen sie von woanders kommen. Koch gibt in seiner Lektüre der Hegelschen Naturphilosophie eine Herleitung, die genauer ist, als man erwartet. Die Richtungen des Raumes kommen vom Leib, und zwar von drei Weisen, wie der Leib sich bewegt. Die natürliche Bewegung, der Fall, gibt Oben und Unten. Die freie Bewegung, das Gehen, gibt Hinten und Vorn: Vorn ist, wohin ich gehe. Die Wahl, das Greifen mit dieser und nicht jener Hand, gibt Rechts und Links. Die Modi der Zeit dagegen, Vergangenheit, Gegenwart und Zukunft, kommen von den Seelenvermögen: Erinnerung, Wahrnehmung, Erwartung.\footnote{Koch, Hegelsche Subjekte in Raum und Zeit.} Der Leib ist also nicht nur ein Ding im Raum, das zufällig Richtungen hat; er ist das, was dem Raum seine Richtungen \emph{gibt}, indem er sich in ihm bewegt.
+
+Baumann hatte gegen Leibniz behauptet, dass Bestimmungen wie rechts und links, oben und unten \zitat{Eigenthum des Geistes} sind und im Körper nur mit angedeutet werden.\footnote{Baumann, Lehren, Bd.\,2, Kapitel zu Leibniz' Raumlehre.} Das ist dieselbe Einsicht in älterer Sprache: Die Richtung ist nicht im Raum, sondern kommt zu ihm hinzu, von dem, was in ihm lebt.
+
+Nun ist die Bewegung, aus der Koch die Richtungen herleitet, ein Zeitliches. Fallen, Gehen, Greifen sind Übergänge, und ein Übergang ist nach Fink das, was der Raum nicht denken kann und die Zeit trägt. Die Richtungen des Raumes stammen also von der Zeit, aber nicht von der Zeit als Parameter, sondern von der Zeit als der Weise, wie ein Leib sich erneuert und dabei von einem Ort zum anderen kommt. Das ist die zweite Asymmetrie, in ihrer Herkunft beschrieben: Die Zeit hat eine Richtung, weil sie die Faser ist; der Raum hat Richtungen nur, weil eine Faser ihn durchläuft.
+
+\section{Auch die Zahl der Dimensionen}
+
+Es gibt eine Stelle, an der sich diese Herkunft überraschend weit treiben lässt: die Dimensionszahl. Reichenbach fragt, was es heißt, dass der Raum drei Dimensionen hat, wenn doch jede Mannigfaltigkeit von Ereignissen sich durch beliebig viele Parameter beschreiben lässt. Sein Beispiel: Die Bewegung zweier Punkte auf einer Geraden lässt sich ebenso gut als Bewegung eines Punktes in einer Ebene auffassen. Beide Beschreibungen sind äquivalent, solange man nur die Lagen betrachtet. \zitat{Nehmen wir aber das Nahwirkungsprinzip hinzu, so verschwindet die Äquivalenz.} Eine Störung, die sich von einem Punkt aus stetig ausbreitet, breitet sich in der einen Darstellung stetig aus und in der anderen längs zweier gekreuzter Geraden mit unendlicher Geschwindigkeit. \zitat{Das Nahwirkungsprinzip kann nur für eine einzige Wahl der Dimensionszahl des Parameterraums erfüllt sein; derjenige Parameterraum, in dem es gilt, heißt Koordinatenraum oder ›wirklicher Raum‹.}\footnote{Reichenbach, Raum-Zeit-Lehre, \S\,44.}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1,>=Stealth]
+% Links: 1-dim Koordinatenraum mit zwei Punkten und Störung
+\begin{scope}
+\draw[thick] (-0.3,0) -- (4.3,0);
+\fill (1,0) circle (0.07) node[below] {\scriptsize $p_1$};
+\fill (3,0) circle (0.07) node[below] {\scriptsize $p_2$};
+\draw[->,thick,gray] (1,0.25) -- (1.7,0.25);
+\draw[->,thick,gray] (1,0.25) -- (0.3,0.25);
+\node[above] at (1,0.35) {\scriptsize Störung von $p_1$};
+\node at (2,-0.8) {\small Nahwirkung stetig};
+\node at (2,-1.2) {\small \zitat{wirklicher Raum}};
+\end{scope}
+% Rechts: 2-dim Parameterraum, Punkt (x1,x2), Störung greift auf gekreuzten Geraden
+\begin{scope}[xshift=6.5cm]
+\draw[->] (-0.3,0) -- (3.6,0) node[right] {\scriptsize $x_1$};
+\draw[->] (0,-0.3) -- (0,3.4) node[above] {\scriptsize $x_2$};
+\fill (1,3) circle (0.07) node[above right] {\scriptsize $P=(x_1,x_2)$};
+\draw[gray,thick] (0.2,3) -- (3.3,3);
+\draw[gray,thick] (1,0.2) -- (1,3.3);
+\draw[->,thick,gray] (1,3) -- (1.6,3);
+\draw[->,thick,gray] (1,3) -- (0.4,3);
+\draw[->,thick,gray] (1,3) -- (1,2.4);
+\node[align=center] at (1.7,-0.8) {\small dieselbe Störung: sogleich auf\\[-1pt]\small zwei gekreuzten Geraden};
+\end{scope}
+\end{tikzpicture}
+\caption{Parameterraum und Koordinatenraum. Zwei Punkte auf einer Geraden oder ein Punkt in der Ebene: Als Lagen sind beide Darstellungen gleichwertig. Erst die Forderung, dass Wirkungen sich stetig ausbreiten, zeichnet eine aus. Die Dimensionszahl des Raumes ist der objektive Sinn des Nahwirkungsprinzips (nach Reichenbach).}
+\label{abb:parameterraum}
+\end{figure}
+
+Das heißt: Sogar die Zahl der Dimensionen des Raumes ist der Sinn eines Wirkungsgesetzes. Wirkung aber läuft längs der Faser, in der Zeit. Kant hat 1747, in den Gedanken von der wahren Schätzung der lebendigen Kräfte, dieselbe Vermutung geäußert: Die Dreidimensionalität des Raumes folge aus dem Gesetz, nach dem die Substanzen aufeinander wirken, dem umgekehrten Quadrat der Entfernung; hätten die Substanzen keine Kraft, außer sich zu wirken, so gäbe es keinen Raum.\footnote{Schneider, Raum-Zeit-Problem, Kapitel zu Kants vorkritischen Schriften.} Der junge Kant und der späte Reichenbach sagen dasselbe: Was am Raum Struktur ist, bis hinab zur Zahl seiner Dimensionen, wird von der Wirkung bestimmt, die in ihm läuft, und die Wirkung ist zeitlich.
