@@ -1,0 +1,62 @@
+% Zeit und Raum. Grenze, Richtung, Maß
+% Master-Datei: bindet die Kapitel aus kapitel/ und den Apparat aus apparat/ ein.
+\documentclass[fontsize=11pt,paper=a4,oneside,headings=small,open=any,numbers=noenddot,toc=listof]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[autostyle=true,german=guillemets]{csquotes}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing,positioning,patterns,shapes.geometric}
+\usepackage[hidelinks]{hyperref}
+
+\setlist{nosep,leftmargin=*}
+\setcounter{tocdepth}{0}
+\setkomafont{disposition}{\normalfont\bfseries}
+\setkomafont{caption}{\small}
+\setcapindent{0pt}
+\KOMAoptions{captions=tableheading}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{1.5\baselineskip}}
+\renewcommand*{\chapterheadendvskip}{\vspace{1.2\baselineskip}}
+
+\newcommand{\zitat}[1]{\enquote{#1}}
+
+\title{Zeit und Raum}
+\subtitle{Grenze, Richtung, Maß}
+\author{}
+\date{}
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+
+% --- Kapitel -----------------------------------------------------------
+\input{kapitel/00_das-und.tex}
+\input{kapitel/01_die-parallelisierung.tex}
+\input{kapitel/02_grenze.tex}
+\input{kapitel/03_hier-und-jetzt.tex}
+\input{kapitel/04_richtung.tex}
+\input{kapitel/05_mass-und-unmass.tex}
+\input{kapitel/06_sachlich-und-modal.tex}
+\input{kapitel/07_das-dauernde-ich.tex}
+\input{kapitel/08_der-uebergang-und-seine-richtung.tex}
+\input{kapitel/09_leib-und-bewegung.tex}
+\input{kapitel/10_zahl-und-vorzeichen.tex}
+\input{kapitel/11_was-offen-bleibt.tex}
+
+% --- Apparat -----------------------------------------------------------
+\appendix
+\input{apparat/01_statustafel.tex}
+\input{apparat/02_abbildungen.tex}
+\input{apparat/03_sachen.tex}
+\input{apparat/04_personen.tex}
+\input{apparat/05_quellen.tex}
+\input{apparat/06_dokumentdaten.tex}
+
+\end{document}
