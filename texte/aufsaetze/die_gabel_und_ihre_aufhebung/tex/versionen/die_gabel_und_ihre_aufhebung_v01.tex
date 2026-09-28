@@ -1,0 +1,433 @@
+\documentclass[11pt,a4paper]{article}
+% ---------------------------------------------------------------- Präambel (nach der Mappe des Aufbaus)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,margin=2.6cm,marginparwidth=1.9cm,marginparsep=3mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{siunitx}
+\sisetup{locale=DE,group-minimum-digits=4,output-decimal-marker={,}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing,decorations.markings,shapes.geometric,fit,backgrounds,patterns}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\parskip}{2pt plus 1pt}
+\definecolor{zeit}{RGB}{176,58,46}
+\definecolor{raum}{RGB}{31,97,141}
+\definecolor{ferm}{RGB}{30,110,70}
+\definecolor{bos}{RGB}{160,90,20}
+\definecolor{grau}{RGB}{110,110,110}
+\definecolor{befund}{RGB}{40,40,40}
+\definecolor{entspr}{RGB}{31,97,141}
+\definecolor{lesart}{RGB}{160,90,20}
+\newcommand{\EB}{\textcolor{befund}{$\blacksquare$}}
+\newcommand{\EE}{\textcolor{entspr}{$\blacklozenge$}}
+\newcommand{\EL}{\textcolor{lesart}{$\bigcirc$}}
+\newcommand{\Randlesart}{\marginpar{\raggedright\footnotesize\textcolor{lesart}{$\bigcirc$\,Lesart}}}
+\newcommand{\Randentspr}{\marginpar{\raggedright\footnotesize\textcolor{entspr}{$\blacklozenge$\,Entsprechung}}}
+\newcommand{\Randbefund}{\marginpar{\raggedright\footnotesize\textcolor{befund}{$\blacksquare$\,Befund}}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\Oc}{\mathbb O}
+\newcommand{\Cl}{\mathrm{Cl}}
+\newcommand{\M}{\mathrm M}
+
+\title{Die Gabel und ihre Aufhebung\\[4pt]\large Der Aufbau des Physischen und die Dialektik}
+\author{Hwa}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Der Aufbau des Physischen zeigt eine Bewegung, die Hegel als ursprüngliche Einheit, Entzweiung und Herstellung der Einheit mit der Differenz als Moment beschrieben hat, und er zeigt sie zweimal. Klein in den ersten Zeilen der Zahlenwand, wo das Produkt zweier antivertauschender Erzeuger etwas erzeugt, was keiner der beiden für sich hat. Groß von den Quaternionen über die Gabel bei Dimension acht bis zum Atom, wo zwei Lesungen, die drei Stufen lang auf denselben Algebren zusammenfielen, verschiedene Algebren brauchen und im Atom als Kern und Hülle zu einem neutralen Gefüge zusammentreten. Die Entsprechung ist genau, weil sie an drei Stellen gerechnet ist: an der Antivertauschung, an der Gabel, an der Fano-Ebene. Und sie ist begrenzt: Was nur ein Vorzeichen hat, die Energie, kennt keine Aufhebung. Die Dialektik reicht im Aufbau so weit wie die Gegensätze der Ladung; ihr Ende ist das Gewicht.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+%=====================================================================
+\section*{Vorbemerkung: was verglichen wird}
+\addcontentsline{toc}{section}{Vorbemerkung}
+
+Zwei Gegenstände werden nebeneinandergelegt. Der eine ist die Reihe der Algebren, auf der der Aufbau des Physischen ruht: die Zeilen des Pascalschen Dreiecks als Gradgerüste der Clifford-Algebren, die Kette der Divisionsalgebren $\R\subset\C\subset\HH\subset\Oc$, die Stelle bei Dimension acht, an der beide Ketten sich trennen, und die Stufe, auf der die getrennten Seiten in einem Gegenstand wieder zusammenkommen, das Atom. Der andere ist eine Figur der Logik, die Hegel in der Lehre vom Sein und der Lehre vom Wesen entwickelt hat: Eine Bestimmung, die unmittelbar ist, tritt in ihren Unterschied; der Unterschied wird zum Gegensatz; und die Einheit, die daraus hervorgeht, ist nicht die erste, denn sie enthält den Unterschied als ihr Moment. Für das Ganze dieser Bewegung hat Hegel das Wort \emph{aufheben} gewählt und ausdrücklich seinen gedoppelten Sinn gemeint: aufhören lassen und aufbewahren in einem.
+
+Die Ebene, auf der verglichen wird, ist die der Lesart. Was gerechnet ist, wird als gerechnet ausgewiesen; was gemessen ist, als gemessen; die Entsprechung zwischen beidem und der Figur ist Deutung. Am Rand steht das Zeichen der Ebene, wo der Gang von der einen in die andere übergeht, und die Statustafel am Ende führt jede Behauptung mit ihrer Marke. Im laufenden Text wird nicht mit Marken gesprochen.
+
+Zwei Setzungen sind vorweg zu nennen, damit sie nicht als Ergebnis erscheinen. Die erste: Hegel wird als Logik der Darstellung gelesen, nicht als Lehre vom Prozess der Natur. Die Reihe der Stufen ist eine Ordnung der Darstellung, die dem Aufbau der Gegenstände folgt; ob die Natur selbst so gegliedert ist, lässt sich an ihr nicht ablesen. Dasselbe gilt für die Figur: Sie ordnet, wie Bestimmungen auseinander hervorgehen, wenn man sie denkt, und behauptet nichts über ein Werden in der Zeit. Wer die Entsprechung so nimmt, kann sie prüfen; wer sie als Naturgeschichte nimmt, hat sie missverstanden. Die zweite: Das Wort Dialektik wird in dem Sinn gebraucht, den es in der Lehre von den Zeilen bekommen hat. Unterscheidungen verbinden sich zu Formen, und die Lehre dieser Verbindungen heißt Dialektik; wo die Sache algebraisch ist, hat sie eine Rechnung. Hegel tritt in diesem Sinn nicht als Autorität hinzu, sondern als der, der die Verbindungen benannt hat, Identität, Unterschied, Gegensatz, Aufhebung, bevor sie sich rechnen ließen. Die Frage ist, ob die Namen auf die Rechnungen passen, und wo sie aufhören zu passen.
+
+Und eine Warnung, die von der Sache selbst kommt. In der Lehre von den Zeilen steht die Regel: Wer Gevierte sucht, findet Gevierte; ein Fund, der sich so leicht einstellt, ist keiner. Für die Figur der Einheit, Zweiheit und Einheit gilt das erst recht. Jede Verdopplung einer Dimension lässt sich so lesen, jede Trennung und jeder Zusammenfluss. Die Dreizahl der Schritte zeichnet also nichts aus. Was die Entsprechung tragen soll, muss mehr sein als die Zahl: Es muss die Weise sein, in der die Momente ineinander hängen. Die Züge, die am Ende zählen, werden der Reihe nach vorgeführt: dass die Differenz vor ihrer Setzung schon da ist; dass jede Setzung eine Eigenschaft kostet und die Liste der Kosten ein Theorem ist; dass es kein Bild ohne Nullteiler gibt; und dass der Weg, der endet, als Klammer des anderen wiederkehrt. Der letzte Abschnitt zieht die Gegenprobe.
+
+%=====================================================================
+\section{Die Eins, der Schritt, der Umlauf}
+\label{sec:eins}
+
+Die Zahlenwand beginnt mit einer einzelnen Eins. Als Algebra gelesen ist sie $\R$: Skalare, keine Richtung, keine Unterscheidung. Was diese Eins schon trägt, ist die Wiederholbarkeit, $1\cdot1=1$, der Stand, der sich hält, wenn man ihn wiederholt. Mehr ist nicht da, und weniger auch nicht.
+
+Die Zeile $1\,1$ entsteht, wenn ein Erzeuger hinzutritt, ein Element $e$, das nicht Skalar ist und zu $-1$ quadriert. Die Algebra ist $\C$, und zwar nicht durch Setzung, sondern durch Nachrechnen: zweidimensional, kommutativ, ohne Nullteiler. In der Sprache der Unterscheidung: Eine Unterscheidung ist vollzogen, und der Bestand hält beides, das Unterschiedene und das, wovon es unterschieden ist. Die Zeile zählt dafür eine Stelle für den Stand und eine für den Schritt. Und der Schritt, für sich genommen und noch einmal getan, führt an den Ausgang zurück mit umgekehrtem Vorzeichen: $e\cdot e=-1$. Zweimaliges Kreuzen ist nicht der Anfang.
+
+Mit zwei Erzeugern hat die Wand zum ersten Mal eine Mitte. Die Zeile $1\,2\,1$ zählt einen Skalar, zwei Erzeuger, ein Produkt; das Entscheidende steht in der Mitte und ist keine Zahl, sondern eine Regel: Die Erzeuger antivertauschen, $e_1e_2=-e_2e_1$. Die Reihenfolge ist nicht gleichgültig; sie kostet ein Vorzeichen. Das eine ist nicht bloß vom anderen verschieden, es ist so von ihm verschieden, dass der Tausch der Stellungen das Ganze negiert. Aus dieser Regel folgt mit drei Zeilen Rechnung, dass das Produkt $\omega=e_1e_2$ zu $-1$ quadriert:
+\begin{equation}
+  \omega^2=e_1e_2\,e_1e_2=-\,e_1e_1\,e_2e_2=-(-1)(-1)=-1 .
+\end{equation}
+Die Algebra der Zeile $1\,2\,1$ ist $\HH$, und die drei Elemente $e_1$, $e_2$, $e_1e_2$ erfüllen die Hamiltonsche Tafel. Das Produkt ist selbst imaginär. Keiner der beiden Erzeuger hat für sich, was ihr Produkt hat; das Neue entsteht nicht in den Elementen, sondern in ihrem Verhältnis. Und es entsteht nur unter einer Bedingung: Sind beide Erzeuger gleich gerichtet, so läuft das Produkt um; ist einer positiv und einer negativ gerichtet, so wechselt es bloß, $\omega^2=+1$. Das Imaginäre ist kein Bestandteil, den man hinzufügt, sondern ein Verhältnis, das sich unter bestimmten Bedingungen einstellt und unter anderen nicht.
+
+\begin{figure}[h]
+\centering
+\input{bausteine/baustein_geacht_form}
+\caption[Das Geacht der Form]{Die Gruppe, die zwei antivertauschende Wechsel (Erzeuger mit Quadrat $+1$) mit ihren Vorzeichen erzeugen: acht Glieder, drei Gevierte, die sich im Zweier $\{1,-1\}$ durchdringen. Die beiden Wechsel-Gevierte kehren im Doppelschritt zurück; das Geviert des Umlaufs braucht den Weg über die Gegenstellung. Gerechnet aus der Erzeugerrelation; die Beschriftung nennt die Momente, die im Text zugeordnet werden.}
+\label{fig:geacht}
+\end{figure}
+
+\Randlesart Hier steht die Figur ganz, und sie steht, ehe Hegel genannt ist. Die Eins ist die unmittelbare Einheit: Identität ohne Unterschied, die nichts kann als sich wiederholen. Der Schritt ist der Unterschied, und er ist nicht die bloße Verschiedenheit zweier Dinge, die nebeneinanderliegen, sondern Negation: Der Schritt, wiederholt, ist das Gegenteil des Anfangs. Hegel hat für den Schritt, der so vom Anfang verschieden ist, dass seine Wiederholung nicht zum Anfang zurückführt, sondern ihn negiert, den Ausdruck bestimmte Negation gebraucht, im Unterschied zur abstrakten, die nur verneint und nichts festhält. Die Antivertauschung ist die bestimmte Negation als Rechenregel. Und das Produkt $\omega$ ist die Einheit, die die Differenz als Moment enthält: Es ist aus beiden gebildet, es ist keines von beiden, und es hat, was beide zusammen erst haben. Die Rückkehr, die es vollzieht, ist nicht das flache $(-a)(-a)=+a^2$ der Geraden, bei dem die Negation der Negation den Anfang wiederherstellt, sondern der Umlauf $1\to\omega\to-1\to-\omega\to1$, der durch die Gegenstellung hindurchgeht und erst nach dem zweiten Doppelschritt bei sich ankommt. In der Lehre von den Zeilen ist das an Ort und Stelle so benannt worden, Einheit, Entzweiung, Rückkehr, ohne dass Hegel dabei genannt war. Das ist ein Argument für die Entsprechung und nicht gegen sie: Die Figur ist an der Sache gefunden worden, nicht bei Hegel gesucht.
+
+Was diese kleine Gestalt an der Figur präzisiert, sei festgehalten, denn es kehrt im Großen wieder. Erstens: Die Einheit, die aus der Entzweiung hervorgeht, ist ein Produkt. Sie ist nicht die Summe der beiden Momente und nicht ihr Nebeneinander, sondern ihr Verhältnis, und dieses Verhältnis hat ein Vorzeichen, das die Ordnung der Momente festhält. Zweitens: Ob aus der Entzweiung eine solche Einheit wird, hängt an der Bindung der Momente, nicht an ihrer Zahl. Zwei Erzeuger geben immer eine Zeile $1\,2\,1$; ob ihr Produkt umläuft oder wechselt, sagt die Zeile nicht. Drittens: Die Gevierte, die die beiden Wechsel tragen, sind einander so gleich, dass ihr Unterschied an keiner inneren Bestimmung sichtbar wird, sondern nur an dem, was jedes trägt. Die Zweiheit ist also nicht die Zweiheit zweier Verschiedener, sondern die zweier Gleicher, die verschieden gestellt sind. Auch das kehrt wieder.
+
+%=====================================================================
+\section{Zwei Lesungen auf einer Leiter}
+\label{sec:lesungen}
+
+Die drei ersten Sprossen, $\R$, $\C$, $\HH$, lassen sich auf zwei Weisen neben die Physik legen, und beide Weisen sind in der Darstellung der Stufen ausgeführt. Die eine liest die Sprossen als Kräfte: $\C$ trägt die Kreisgruppe der elektrischen Ladung, $\HH$ die Gruppe der schwachen Kraft, deren Einheiten die dreidimensionale Sphäre bilden; die Sprosse $\R$ entspricht der Masse, deren Kopplung kein Vorzeichen kennt. Die andere liest dieselben Sprossen als Eigenschaften der Materie: $\R$ die reelle Amplitude, $\C$ die Phase und mit ihr die Ladung, $\HH$ der Spin und das Dublett. Ein Elektron hat Amplitude, Phase, Spin; das Photon und die Vermittler der schwachen Kraft stehen auf denselben Algebren. Die beiden Leitern sind, drei Sprossen lang, eine Leiter mit zwei Beschriftungen.
+
+Dass es eine Leiter ist und nicht zwei, die zufällig gleiche Zahlen tragen, ist nachzurechnen und nicht zu behaupten. Die Clifford-Kette baut ihre Algebren aus Erzeugern, die Kette der Divisionsalgebren durch Verdopplung; das sind zwei Konstruktionen. Legt man für $n=0,1,2$ die Blades der einen auf die Einheiten der anderen, Skalar auf Skalar, $e_1$ auf $i$, $e_2$ auf $j$, $e_1e_2$ auf $k$, so stimmen alle Produkttafeln überein, ohne dass ein Vorzeichen zu korrigieren wäre; die Zuordnung ist ein Isomorphismus der Algebren. Und bei $n=3$ gibt es unter allen Zuordnungen von Blades auf Einheiten mit beliebigen Vorzeichen keine, die die Tafeln zur Deckung bringt. Die Koinzidenz reicht genau bis $\HH$ und keinen Schritt weiter.
+
+\Randlesart Damit ist die Zweiheit, die an der Gabel sichtbar wird, vor der Gabel schon da. Die Kraft-Lesung und die Materie-Lesung sind auf $\R$, $\C$, $\HH$ verschieden, sie fragen nach Verschiedenem, ob etwas vermittelt oder ob es Platz einnimmt, und sie sind auf denselben Algebren nicht zu unterscheiden. Hegel hat für diese Lage eine genaue Bestimmung: Der Unterschied ist \emph{an sich} vorhanden, aber nicht \emph{gesetzt}. Die Reflexion, die in der Lehre vom Wesen die Identität in ihre Unterschiede entfaltet, erzeugt diese Unterschiede nicht; sie setzt, was in der Identität schon liegt, und die Identität ist gerade dadurch Identität, dass sie ihre Unterschiede in sich hält, ohne sie zu zeigen. Die gemeinsamen Sprossen sind eine solche Identität. Man kann an ihnen nicht sehen, ob sie Kraft oder Materie tragen; man kann nur wissen, dass sie beides tragen, weil beides auf ihnen angeschrieben ist. Und genau das ist die Unterscheidung, die in der Darstellung der Stufen mit dem Wort Doppellesung festgehalten ist: Nicht die Algebra ist doppelt, sondern ihre Lesung.
+
+Das Wort ist zu betonen, weil an ihm die Entsprechung hängt. Wenn die Gabel als Spaltung eines Stammes gedacht würde, dann wäre die Einheit vor ihr eine einfache, und die Zweiheit entstünde erst mit ihr. Dann hätte man das Schema, das man überall findet: erst eins, dann zwei. Das Schema ist hier ausdrücklich ausgeschlossen. In der Lehre von den Zeilen steht: Es gibt keinen Stamm, der sich verzweigte, sondern zwei Weisen, aus der Summe der Zeile $1\,2\,1$ acht zu machen; und in der Darstellung der Stufen: Es verzweigt sich dabei kein Stamm, jede Leiter läuft für sich gerade weiter, und die gemeinsamen Sprossen bleiben beiden erhalten. Der Unterschied war da; die Gabel ist die Stelle, an der er nicht mehr ungesetzt bleiben kann. Das ist präziser als das Schema und zugleich näher an Hegel, dessen Entzweiung nie die Spaltung eines Einfachen ist, sondern das Hervortreten dessen, was die Einheit an sich schon war.
+
+%=====================================================================
+\section{Die Gabel}
+\label{sec:gabel}
+
+Die Zeile $1\,3\,3\,1$ hat die Summe acht, und die Wand hält an dieser Stelle zwei Bestände der Dimension acht bereit, beide aus derselben Quelle, der Verdopplung von $\HH$, und von grundsätzlich verschiedener Bauart.
+
+Der eine verdoppelt die Zahl. Aus einer Algebra $A$ wird $A\oplus A$ mit einer neuen Multiplikation, die die beiden Hälften ineinander verschränkt: das Verfahren von Cayley und Dickson, das aus $\R$ die komplexen Zahlen, aus diesen die Quaternionen und aus diesen die Oktaven $\Oc$ macht. Die Oktaven sind ungeteilt: eine Divisionsalgebra, jede von null verschiedene Größe umkehrbar, die Norm multiplikativ. Dafür sind sie nicht mehr assoziativ; die Klammerung ist nicht länger gleichgültig, nur die Alternativität bleibt. Ihr Bau ist $1/7$, eine reale Einheit, sieben imaginäre, und in sich noch einmal nach real und imaginär gegliedert, $\Oc=\HH+\HH e$. Das erste Geviert trägt das $1/3$ der Quaternionen, das zweite ist rein imaginär. Und die Gliederung ist eine Graduierung: Das Produkt zweier Elemente aus $\HH e$ liegt wieder in $\HH$; die neue Hälfte hat die alte nicht hinter sich, sondern in sich.
+
+Der andere verdoppelt den Bestand. Ein dritter Erzeuger tritt hinzu, und die Algebra $\Cl(0,3)$ entsteht, ebenfalls achtdimensional. Aber sie ist zerfallen: Ihr Pseudoskalar $\omega=e_1e_2e_3$ liegt im Zentrum und hat das Quadrat $+1$, und darum sind $p_\pm=\tfrac12(1\pm\omega)$ zwei Idempotente mit $p_+p_-=0$, an denen sich die Algebra in zwei Ideale teilt, $\Cl(0,3)\cong\HH\oplus\HH$. Jedes der beiden Häuser trägt für sich die Hamiltonsche Tafel; sie berühren einander nicht. Diese Acht ist assoziativ, und dafür hat sie Nullteiler.
+
+Das ist die Gabel: Bis zur Dimension acht teilen die Verdopplung und die Clifford-Reihe dieselben Algebren; hier trennen sie sich. Die eine steigt zu $\Oc$, die Divisionsalgebra, die die Assoziativität aufgibt; die andere zu $\HH\oplus\HH$, die assoziative Algebra, die die Division aufgibt. Man kann nicht beides zugleich behalten. Der Satz von Frobenius sagt es ohne Umschweife: Die assoziativen Divisionsalgebren endlicher Dimension über den reellen Zahlen sind $\R$, $\C$ und $\HH$, und eine assoziative Algebra der Dimension acht kann keine Divisionsalgebra sein. Und der Satz von Hurwitz sagt, dass die Verdopplung nur bis $\Oc$ Divisionsalgebren liefert; beim nächsten Schritt, den Sedenionen, gibt es den vorgelegten Nullteiler $(e_1+e_{10})(e_4-e_{15})=0$. Drei Merkmale fallen an derselben Stelle: Assoziativität, Einfachheit, Division. Es sind drei Symptome eines Ereignisses, und das Ereignis ist der Pseudoskalar mit Quadrat $+1$.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Stealth,
+  al/.style={draw,rounded corners=3pt,minimum width=2.1cm,minimum height=8mm,font=\small},
+  ein/.style={draw,rounded corners=3pt,minimum width=2.6cm,minimum height=7mm,font=\scriptsize,align=center,fill=white}]
+\foreach \x/\c in {-2.3/zeit,2.3/ferm} {
+  \draw[very thick,\c!60] (\x-1.15,0.6)--(\x-1.15,-4.4);
+  \draw[very thick,\c!60] (\x+1.15,0.6)--(\x+1.15,-4.4);
+}
+\foreach \y/\t/\k/\m in {0/{$\R$}/{Masse}/{Amplitude},-1.3/{$\C$}/{$U(1)$}/{Phase},-2.6/{$\HH$}/{$SU(2)$}/{Spin}} {
+  \node[al,fill=grau!8] at (-2.3,\y) {\t};
+  \node[al,fill=grau!8] at (2.3,\y) {\t};
+  \draw[grau,dotted,thick] (-1.2,\y)--(1.2,\y);
+  \node[font=\scriptsize,zeit!80!black,anchor=east] at (-3.6,\y) {\k};
+  \node[font=\scriptsize,ferm!80!black,anchor=west] at (3.6,\y) {\m};
+}
+\node[al,fill=zeit!15] (O) at (-2.3,-3.9) {$\Oc$};
+\node[al,fill=ferm!15] (HH) at (2.3,-3.9) {$\HH\oplus\HH$};
+\node[font=\scriptsize,zeit!80!black,anchor=east] at (-3.6,-3.9) {$SU(3)\subset G_2$};
+\node[font=\scriptsize,ferm!80!black,anchor=west] at (3.6,-3.9) {Händigkeit};
+\draw[dashed,red!60,thick] (-5.4,-3.25)--(5.4,-3.25);
+\node[font=\scriptsize,red!60!black,anchor=west] at (5.45,-3.25) {Dim.\ 8};
+\node[font=\scriptsize,align=center,anchor=south] at (-2.3,0.7) {Kraft-Lesung\\(Verdopplung der Zahl)};
+\node[font=\scriptsize,align=center,anchor=south] at (2.3,0.7) {Materie-Lesung\\(Verdopplung des Bestands)};
+\node[font=\scriptsize,grau,align=center,fill=white,inner sep=1pt] at (0,-1.95) {eine Leiter,\\zwei Lesungen};
+\node[font=\scriptsize,align=center,below=1mm of O] {ungeteilt;\\nicht assoziativ};
+\node[font=\scriptsize,align=center,below=1mm of HH] {zerfallen;\\Nullteiler};
+% drei Einheiten
+\node[ein,fill=raum!6] (F) at (-3.4,-6.4) {Fano-Ebene\\beide Seiten, ein Skelett};
+\node[ein,fill=raum!6] (A) at (0,-6.4) {Atom\\Kern unten, Hülle oben};
+\node[ein,fill=raum!6] (B) at (3.4,-6.4) {Klammer\\$\Oc$ baut $\Cl(0,8)$};
+\draw[->,grau] (O.south) to[out=-90,in=90] (F.north);
+\draw[->,grau] (HH.south) to[out=-90,in=90] (F.north);
+\draw[->,grau] (O.south) to[out=-90,in=90] (A.north);
+\draw[->,grau] (HH.south) to[out=-90,in=90] (A.north);
+\draw[->,grau] (O.south) to[out=-90,in=90] (B.north);
+\draw[->,grau] (HH.south) to[out=-90,in=90] (B.north);
+\end{tikzpicture}
+\caption[Eine Leiter, zwei Lesungen, drei Einheiten]{Eine Leiter mit zwei Lesungen bis $\HH$; bei Dimension acht brauchen die Lesungen verschiedene Algebren. Darunter die drei Weisen, in denen die getrennten Seiten wieder zusammenkommen (Abschnitt~\ref{sec:einheiten}). Verhältnis-Darstellung; die physikalischen Beschriftungen sind Entsprechung.}
+\label{fig:leitern}
+\end{figure}
+
+\Randlesart In der Sprache der Wesenslogik ist das der Übergang von der Verschiedenheit zum Gegensatz. Verschieden sind zwei Bestimmungen, die nebeneinander bestehen können und einander gleichgültig sind; entgegengesetzt sind sie, wenn die eine nur ist, indem sie die andere ausschließt. Die Kraft-Lesung und die Materie-Lesung waren auf den gemeinsamen Sprossen verschieden, aber nicht entgegengesetzt: Beides ließ sich an derselben Algebra ablesen. An der Gabel wird der Unterschied zum Entweder-Oder. Wer die Division behält, verliert die Assoziativität; wer die Assoziativität behält, verliert die Division. Und das ist nicht ein Mangel der Konstruktion, den eine bessere beheben könnte, sondern ein Satz. Die Setzung der Differenz ist erzwungen, und sie ist erzwungen durch das, was die gemeinsamen Sprossen an sich schon enthielten: den Pseudoskalar, der bei drei Erzeugern zentral wird und positiv quadriert.
+
+Mit der Setzung ist ein Preis verbunden, und der Preis ist der zweite der Züge, die die Entsprechung tragen. Auf jeder Sprosse der Verdopplung geht eine Eigenschaft verloren: $\C$ ist nicht mehr geordnet, $\HH$ nicht mehr kommutativ, $\Oc$ nicht mehr assoziativ; bei den Sedenionen gehen Alternativität, multiplikative Norm und Division verloren. Die Liste ist Theorem, nicht Deutung. Und auf der anderen Seite der Gabel ist der Preis die Division. Hegel hat den Satz, dass jede Bestimmung Negation ist, von Spinoza übernommen und zum Grundsatz gemacht: Etwas ist bestimmt, indem es anderes ausschließt, und was es ausschließt, gehört zu seiner Bestimmtheit. Die Verlustliste der Verdopplung ist dieser Satz als Tabelle. Jede Sprosse ist, was sie ist, durch das, was sie nicht mehr kann, und die beiden Seiten der Gabel sind durch ihren je anderen Verlust bestimmt. Wo ein Schema der Dreischritte nur zählt, zählt die Liste, was es kostet; und dass es etwas kostet, unterscheidet die bestimmte Negation von der bloßen Verneinung.
+
+Eine Genauigkeit noch, die die Lehre von den Zeilen anmahnt: Das Wort Gabel ist als Bild zu nehmen und nicht als Bau. Die beiden Wege gehen nicht aus einem Punkt auseinander, sie gehen von derselben Sprosse aus verschieden weiter, und die Sprosse bleibt beiden. In der Darstellung der Stufen heißt das: Die Doppellesung endet für die Fortsetzung, nicht für den Bestand. Unterhalb der Trennung liegen die Vermittler der schwachen Kraft und die Leptonen weiter auf $\HH$, quaternionische Kraft und quaternionische Materie, und das Higgs-Dublett, als Quaternion geschrieben, bricht die Symmetrie nur bis zu dieser Sprosse. Was sich gabelt, ist die Fortsetzung. Was bleibt, bleibt.
+
+%=====================================================================
+\section{Kein Bild ohne Nullteiler}
+\label{sec:nullteiler}
+
+Die beiden Seiten der Gabel unterscheiden sich nicht nur darin, was sie kosten, sondern darin, was sie können. Die Seite der Assoziativität ist die Seite der Darstellbarkeit. Auf ihr liegt die ganze Clifford-Reihe und mit ihr die Algebra der Raumzeit, $\Cl(1,3)\cong\M_2(\HH)$; beschrieben, gemessen und in Zustände zerlegt wird alles, was es gibt, auf dieser Seite. Die Seite der Division ist die Seite, die sich nicht darstellen lässt. Die Oktaven bilden keine Algebra von Operatoren, denn jede Hintereinanderausführung von Abbildungen ist assoziativ; ihre Linksmultiplikationen sind Operatoren, aber $L_aL_b\ne L_{ab}$. Nach außen treten die Oktaven in der Physik nur über ihre Automorphismen: Die Gruppe $G_2$, die die Oktaven strukturtreu umordnet, enthält als Stabilisator einer imaginären Einheit die Gruppe der Farbe, $SU(3)$, und unter ihr zerfallen die sieben imaginären Einheiten in ein Triplett, ein Antitriplett und einen Rest.
+
+Warum die eine Seite zeigen kann und die andere nicht, hat in der Lehre von den Zeilen einen Satz bekommen, und er ist der dritte der Züge: kein Bild ohne Nullteiler. Wer darstellt, zerlegt; wer zerlegt, braucht Projektoren, Idempotente, die weder null noch eins sind; und jedes solche Idempotent ist bereits ein Nullteiler, denn $p(1-p)=p-p^2=0$. Eine Divisionsalgebra, in der nichts verschwinden kann, hat darum keine nichttrivialen Projektoren. Für $\HH$ und $\Oc$ ist das vorgerechnet: Ein Idempotent $a=a_0+v$ mit imaginärem Anteil $v\ne0$ erzwänge $a_0=\tfrac12$ und ein negatives Normquadrat, das es im Definiten nicht gibt; die Suche aus tausenden Startwerten findet nur $0$ und $1$. Die zerfallene Acht dagegen ist ihr Paar von Projektoren, $p_+$ und $p_-$, und das Bild dafür ist der Polarisationsfilter: Ein Filter zweimal wirkt wie einmal, zwei gekreuzte lassen nichts durch. Die ungeteilte Acht kann nicht zerlegen; die zerfallene Acht ist Zerlegung. Der Weg der Umkehrbarkeit ist der Bestand, der sich ganz hält und darum nichts zeigen kann; der Weg der Darstellbarkeit ist der Bestand, der Stellen und Bilder hat und dafür mit der Möglichkeit der Auslöschung bezahlt. Eine Welt, in der etwas erscheint, ist notwendig eine Welt, in der etwas verschwinden kann.
+
+\Randlesart Das ist die Erscheinungslogik der Wesenslogik als Satz. Hegel beginnt den Abschnitt über die Erscheinung mit dem Satz, dass das Wesen erscheinen muss, und er meint damit nicht, dass hinter der Erscheinung ein Wesen verborgen bliebe, sondern dass das Wesen nur ist, indem es sich zeigt. Zugleich ist die Erscheinung für ihn das, was nicht für sich besteht: Sie hat ihren Grund in einem anderen, sie ist Schein, der aufgehoben werden kann. Beides hält der Satz von den Nullteilern zusammen. Zeigen heißt zerlegen; Zerlegen heißt, dass Anteile verschwinden können. Das Wesen, das nur ist, indem es erscheint, ist auf der Seite der Darstellbarkeit; das Wesen, das sich ganz hält, ist auf der Seite der Division, und es zeigt sich nicht. Hegel hat nicht gesagt, dass es Letzteres gibt. Die Algebra sagt es, und sie sagt, was es kostet: die Fortsetzung.
+
+In der Physik ist die Seite, die sich nicht zeigt, besetzt, und zwar mit dem, was tatsächlich nie nach außen tritt. Das Innere des Nukleons trägt Farbe, und Farbe ist eingeschlossen; nach außen erscheinen nur farbneutrale Verbände. Dass der Einschluss eine Tatsache der Dynamik ist und nicht aus der Nichtdarstellbarkeit folgt, ist festzuhalten; die Parallele zwischen dem, was sich algebraisch nicht darstellen lässt, und dem, was physisch nicht nach außen tritt, ist eine Lesart. Aber sie ist eine, die den Vergleich mit Hegel an einer empfindlichen Stelle trifft, und die Stelle wird in Abschnitt~\ref{sec:grenze} wieder aufgenommen: Hegel sagt, das Innere und das Äußere seien derselbe Inhalt. Die Physik sagt, das Innere des Nukleons erscheine nach außen nie, und sie sagt zugleich, dass seine Bindungsenergie nach außen vollständig erscheine, als Masse. Beides ist wahr, und die Entsprechung muss beides tragen können oder sie taugt nicht.
+
+%=====================================================================
+\section{Drei Einheiten der Gabel}
+\label{sec:einheiten}
+
+Was sich an der Gabel getrennt hat, kommt an drei Stellen wieder zusammen, und die drei Stellen sind von verschiedener Art: eine Figur, ein Gegenstand, eine Schließung. Keine von ihnen macht die Trennung rückgängig. Jede enthält sie.
+
+\subsection{Die Fano-Ebene}
+
+Die Multiplikation der sieben imaginären Oktaven lässt sich an einer Figur aus sieben Punkten und sieben Geraden ablesen, der kleinsten projektiven Ebene. Jede Gerade trägt drei Einheiten, die zusammen eine Kopie der Quaternionen erzeugen; je zwei Geraden teilen genau einen Punkt, jeder Punkt liegt auf genau drei Geraden. Das ist die eine Seite der Gabel. Die andere Seite hat dieselbe Figur. Die sieben Blades von $\Cl(0,3)$ außer dem Skalar, $e_1$, $e_2$, $e_3$, $e_1e_2$, $e_1e_3$, $e_2e_3$, $e_1e_2e_3$, multiplizieren sich bis auf Vorzeichen wie die von null verschiedenen Elemente der Gruppe $(\mathbb Z_2)^3$, und die Tripel, deren Produkt wieder ein Blade der Tripel ist, sind genau die Geraden derselben Ebene. Legt man die Einheiten der Oktaven mit ihren Indizes auf die Blades, so stimmen die Geraden nicht nur als Figur überein, sondern Gerade für Gerade unter derselben Regel: Die dritte Stelle ist die Summe der beiden ersten, Bit für Bit. In der Lehre von den Zeilen ist diese Übereinstimmung mit vorgelegten Isomorphismen gerechnet, und sie geht noch weiter, zu den Wendungen der Operatoren der Logik, die dieselbe Ebene tragen. Die Fano-Ebene ist die Brücke, die beide Seiten teilen, und sie ist nicht gewählt, sondern erzwungen: Es gibt unterhalb von sieben Punkten keine projektive Ebene, und die Gruppe $(\mathbb Z_2)^3$, die beide Seiten indiziert, hat genau diese sieben Kleinschen Untergruppen als Geraden.
+
+\begin{figure}[h]
+\centering
+\input{bausteine/baustein_fano_beidseitig}
+\caption[Die Fano-Ebene auf beiden Seiten]{Die Fano-Ebene mit doppelter Beschriftung: schwarz die Einheiten der Oktaven, grau dieselbe Stelle als Blade von $\Cl(0,3)$. Geraden aus den Produkttripeln gerechnet; die Regel $a\oplus b=c$ gilt auf beiden Seiten. Farben nach Lage, ohne Bedeutung.}
+\label{fig:fano}
+\end{figure}
+
+\Randlesart Die Fano-Ebene hat eine Eigenschaft, die für die Lehre von den Verbindungen die tiefste ist: Sie ist selbstdual. Liest man die Geraden als Punkte und die Punkte als Geraden, so entsteht wieder eine projektive Ebene, und zwar dieselbe. In der kleinsten Geometrie der Gevierte ist jede Verbindung selbst ein Ding derselben Art; Unterscheiden und Verbundenes können einander vertreten, ohne dass etwas verloren geht. Hegel hat das Absolute in der Differenzschrift als die Identität der Identität und der Nichtidentität bestimmt: Entgegensetzen und Einssein zugleich in ihm. Die Formel ist berüchtigt, weil sie leer klingt. Die Fano-Ebene ist ihre kleinste nichtleere Gestalt. Sie ist auf beiden Seiten der Gabel dasselbe, obwohl die Seiten entgegengesetzt sind; sie ist in sich die Einheit von Punkten und Geraden, die dasselbe sind, ohne aufzuhören, verschieden zu sein. Was sie nicht ist: eine Einheit, die die Gabel aufhebt. Die Oktaven bleiben nicht assoziativ, $\Cl(0,3)$ bleibt zerfallen; die Ebene ist das Skelett, das beide teilen, nicht der Leib, der sie vereinigt. Sie ist die Einheit als Form.
+
+\subsection{Das Atom}
+
+Die zweite Einheit ist ein Gegenstand. In der Reihe der Stufen ist der Kern die erste gebundene Gestalt: Gluonen binden je drei Quarks zu einem Nukleon, Nukleonen binden einander durch einen Rest der starken Kraft. Das Nukleon steht mit seinem farbigen Innern unterhalb der Gabel, auf der Seite der Oktaven; der Kern wird nicht von der Farbe gebunden, sondern von ihrem Rest, und dieser ist in der Beschreibung durch Pionen eine Sache der chiralen Symmetrie, quaternionisch. Die Hülle ist die einfachste gebundene Gestalt: ein Fermion, das Elektron, gebunden durch das Photon. Sie steht auf $\C$ und $\HH$; alles, was die Chemie braucht, steht dort, und oberhalb des Atoms kommt keine neue Algebra hinzu. Im Atom treten Kern und Hülle zu einem neutralen Ganzen zusammen. Es ist die Stelle, an der beide Seiten der Gabel in einem Gegenstand zusammentreten: unten, eingeschlossen, die Seite, die sich nicht zeigt; oben, in Zuständen zerlegt, die Seite, die sich darstellt. Die Quantenzahlen des Atoms sammeln die Raumzeit, die Wechselwirkung, den Vermittler, den Stoff und den Kern in einem Gebilde.
+
+Zwei Bestimmungen aus der Darstellung der Stufen sind hier wörtlich zu nehmen. Die erste: Kern und Hülle folgen nicht aufeinander, sondern gehen nebeneinander in das Atom ein; die Kette hat an dieser Stelle einen Zusammenfluss. Die zweite: Die Schließung der Gabel im Atom ist kein fünftes Objekt, sondern ein Produkt. In den Sphären der Größen, die die Terme einer Lagrangedichte nach der Parität ihrer Exponenten ordnen, ist der Kontakt zwischen Kraft und Materie das Produkt der Sphäre der Bosonen mit der Sphäre der Fermionen, der Vertex, und sein Quadrat fällt in die Sphäre der Mechanik zurück. Das Atom ist der Ort dieses Produkts.
+
+\Randlesart Damit hat die Einheit, die das Atom ist, genau die Gestalt, die in Abschnitt~\ref{sec:eins} an der kleinsten Zeile gefunden wurde: Sie ist ein Produkt, nicht eine Summe. Kern und Hülle sind im Atom nicht nebeneinander wie zwei Verschiedene, sie sind aufeinander bezogen wie zwei Entgegengesetzte, denn die Hülle ist die Antwort des Elektrons auf die Ladung des Kerns, ihre Niveaus hängen an der Kernladung, und ohne sie gibt es keine Hülle. Und die Einheit ist neutral: Nach außen zeigt das Atom keine Ladung, obwohl es aus Ladungen besteht. Das ist die Bestimmung, die Hegel Gefüge nennt, wenn er Glied und Gefüge unterscheidet, und die in den Hinsichten der Kopplung, die die Darstellung der Stufen aus der Wesenslogik nimmt, dem Atom zugeordnet ist: Kern und Hülle, jedes für sich Gestalt, treten als Glieder zu einem Ganzen zusammen. Was hinzuzufügen bleibt, ist nur dies: Die Glieder sind die beiden Seiten der Gabel, und das Gefüge enthält ihre Differenz als Moment. Die eine Seite ist im Atom nur als das da, was nicht erscheint. Das ist keine Schwäche der Einheit, sondern ihre genaue Fassung. Eine Einheit, in der beide Seiten gleichermaßen erschienen, hätte die Gabel nicht in sich, sondern hinter sich.
+
+\subsection{Die Klammer}
+
+Die dritte Einheit ist eine Schließung, und sie ist die überraschendste, weil sie den Weg betrifft, der endet. Die Oktaven setzen sich nicht fort; die Kette der Divisionsalgebren ist bei ihnen zu Ende. Aber sie verschwinden nicht. Ihre sieben Linksmultiplikationen $L_i\colon x\mapsto e_ix$ sind lineare Abbildungen des achtdimensionalen Raums; sie erfüllen $L_i^2=-1$ und antivertauschen paarweise, und die Algebra, die sie erzeugen, hat den Rang $64$: Es ist die volle Matrixalgebra $\M_8(\R)$. Mit einem achten Erzeuger auf dem verdoppelten Raum entsteht eine Algebra vom Rang $256$, $\Cl(0,8)\cong\M_{16}(\R)$, und das ist die Algebra, mit der die Clifford-Reihe ihre Periode schließt: Von da an wiederholt sich die Klassifikation im Takt acht. Der Endpunkt des einen Weges liefert die Erzeuger, mit denen sich der andere zur Periode schließt. Die Umkehrbarkeit, die als Weg endet, kehrt als Klammer der Wand wieder.
+
+\Randlesart Das ist der letzte der Züge, und er ist Aufhebung im vollen Sinn des Wortes, als Rechnung. Die Oktaven hören auf, ein Weg zu sein; das ist das Aufhören. Sie bleiben, was sie sind, ungeteilt, nicht assoziativ, ohne Fortsetzung; das ist das Aufbewahren. Und sie werden zu etwas, was sie als Weg nicht waren, zu den Erzeugern der Schließung des anderen Weges; das ist, was die Auslegung das Erheben nennt. Hegels Bestimmung, das Aufgehobene sei ein Vermitteltes, das die Bestimmtheit, aus der es herkommt, noch an sich habe, trifft hier Wort für Wort: $\M_{16}(\R)$ hat die Oktaven an sich, in seinen Erzeugern, ohne selbst Oktaven zu enthalten, denn es ist assoziativ. Hier liegt auch die Stelle, an der die Entsprechung mit Hegel am weitesten geht und zugleich am deutlichsten von ihm abweicht. Bei Hegel geht das Aufgehobene als höhere Bestimmung weiter; die Bewegung hat eine Richtung. An der Gabel geht nur die zerfallene Seite weiter, und die ungeteilte bleibt stehen. Das Erheben liegt auf der einen Seite, das Bewahren auf der anderen; die Momente des Aufhebens sind auf die beiden Zinken verteilt. Erst die Klammer bringt sie nachträglich zusammen, und sie bringt sie zusammen, ohne die Verteilung aufzuheben: Die Oktaven bauen die Periode, aber sie treten in ihr nicht auf.
+
+%=====================================================================
+\section{Die Aufhebung im Atom}
+\label{sec:aufhebung}
+
+In der Darstellung der Stufen steht das Wort aufheben an einer tragenden Stelle, und es steht dort im physikalischen Sinn: Wo Ladungen in Gegensätzen vorkommen, heben sie sich im gebundenen Ganzen auf, und nach außen bleibt ein spezifischer Rest der Kraft. Was sich nicht aufheben kann, weil es nur ein Vorzeichen hat, die Energie, tritt vollständig und unspezifisch nach außen, als Gewicht, und summiert sich. Die Frage ist, ob an derselben Stelle auch der gedoppelte Sinn Hegels erfüllt ist. Sie lässt sich am Wasserstoffatom an drei Größen entscheiden.
+
+\emph{Aufhören.} Die Ladung des Protons ist $2\cdot\tfrac23-\tfrac13=+1$, die des Elektrons $-1$; die Summe ist null. Das ist keine Näherung, sondern eine Gleichheit, die im Standardmodell aus den Bedingungen der Anomaliefreiheit zusammen mit den Kopplungen folgt, die die Massen erzeugen. Nach außen hat das Atom kein festes Feld. Die Ladung hat aufgehört, ein Außen zu haben.
+
+\emph{Aufbewahren.} Die Ladung ist nicht verschwunden. Sie ist die Bindung. Das Elektron ist gebunden, weil die Ladung des Kerns im Zentrum sitzt, und die Bindungsenergie des Grundzustands, $\SI{13.6}{eV}$, ist die Energie dieser Ladung im Feld jener. Die Kernladung, um die sich die Hülle bildet, wird von der Stufe des Kerns an die Stufe der Hülle weitergegeben, nicht neutralisiert; sie ist das, was die eine Stufe der anderen hinterlässt. Im Innern des Atoms ist alles Ladung, und nach außen ist nichts davon zu sehen.
+
+\emph{Erheben.} Was nach außen bleibt, ist ein Rest, und er ist von anderer Art als das, woraus er kommt. Ein neutrales Ganzes antwortet erst dem, was ihm gegenübertritt: Das Atom wird im Feld eines Nachbarn zum Dipol, und die Schwankungen seiner Ladungswolke erzeugen im Nachbarn einen Gegendipol; die Energie zwischen zwei Ladungen fällt wie $1/r$, die Dispersion wie $1/r^6$. Der Rest ist spezifisch: Er trägt die Art des Ganzen nach außen, als Valenz, als Polarisierbarkeit, als Bereitschaft zur Verbindung, und er eröffnet die nächste Stufe, das Molekül. Die Neutralität schließt eine Stufe ab und eröffnet die folgende. Das ist die Bestimmtheit, die das Aufgehobene aus dem hat, woraus es kommt: Die Valenz ist Ladung, die nicht mehr als Ladung erscheint.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Stealth,font=\small]
+\fill[pattern=north east lines,pattern color=zeit!60] (0,0) circle (0.35);
+\draw[zeit,thick] (0,0) circle (0.35);
+\node[font=\scriptsize,zeit!80!black] at (0,-0.7) {Kern: $+Ze$, Farbe eingeschlossen};
+\draw[raum,thick] (0,0) circle (1.7);
+\draw[raum,thick,dashed] (0,0) circle (2.3);
+\node[font=\scriptsize,raum!80!black] at (0,2.6) {Hülle: $-Ze$, Zustände auf $\C$ und $\HH$};
+\draw[->,thick,zeit] (0.25,0.25)--(1.15,1.25) node[pos=1,anchor=south west,font=\scriptsize]{$Ze$ weitergegeben};
+\draw[->,thick,raum] (2.3,0)--(3.6,0) node[right,font=\scriptsize,align=left]{Rest: Dipol, $1/r^6$\\spezifisch, kurz};
+\draw[->,very thick,grau] (0,-2.3)--(0,-3.8) node[below,font=\scriptsize,align=center]{Gewicht: $mc^2$, Bindung als Masse\\unspezifisch, unbegrenzt};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,1.5) {Ladung nach außen: $+1-1=0$};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,1.15) {\quad aufgehört};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,0.55) {Bindung: $\SI{13.6}{eV}$};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,0.2) {\quad aufbewahrt};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,-0.4) {Rest: Valenz, Polarisierbarkeit};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,-0.75) {\quad erhoben};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,-1.35) {Masse: $\num{938}\,\mathrm{MeV}$ je Nukleon,};
+\node[font=\scriptsize,align=left,anchor=west] at (-8.0,-1.7) {\quad zu rund \SI{99}{\percent} Bindung: kein Gegenteil};
+\end{tikzpicture}
+\caption[Die Aufhebung im Atom]{Das Atom als Gabelschließung: unten die Seite, die nicht erscheint, oben die Seite, die sich zerlegen lässt; nach außen zwei Gestalten, der Rest und das Gewicht. Links die drei Momente des Aufhebens an den Größen des Wasserstoffatoms. Verhältnis-Darstellung; die Zahlen sind Befund.}
+\label{fig:atom}
+\end{figure}
+
+\Randlesart Hegels Anmerkung zum Aufheben sagt, das Wort habe in der Sprache den gedoppelten Sinn, dass es soviel als aufbewahren, erhalten bedeute und zugleich soviel als aufhören lassen, ein Ende machen; das Aufgehobene sei nicht nichts, sondern ein Vermitteltes, das die Bestimmtheit, aus der es herkommt, noch an sich habe. Am Atom ist das nicht Deutung einer Deutung, sondern Zuordnung von Größen. Die Ladung hört auf, als Feld nach außen zu wirken; sie bleibt als Bindung erhalten; und sie tritt als Rest in einer neuen Bestimmtheit auf, die ohne sie nicht wäre und die sie nicht mehr ist. Das dritte Moment, das Erheben, steht nicht in Hegels Wortlaut; es ist Auslegung, und es sei als solche geführt. Aber es hat hier einen Träger, den es sonst selten hat: Der Rest ist messbar, er fällt wie $1/r^6$, und er ist das, woraus die nächste Stufe gebaut ist.
+
+Was am Atom geschieht, geschieht in der Reihe zweimal. Farbneutrale Nukleonen binden sich durch den Rest der starken Kraft zu Kernen; elektrisch neutrale Atome binden sich durch Reste der elektromagnetischen Kraft zu Molekülen. Und jedesmal betrifft die Neutralität genau eine Kraft, während eine andere weitergegeben wird: Das Nukleon ist farbneutral und elektrisch geladen; seine Ladung ist es, um die sich die Hülle bildet. Das Atom ist elektrisch neutral, und was es weitergibt, ist kein Rest einer Ladung, sondern seine Masse. Die Reihe schreitet also nicht dadurch fort, dass eine Stufe die vorige aufhebt und aus dem Aufgehobenen die nächste baut; sie schreitet fort, indem sie an jeder Stufe eine Ladung aufhebt und die nächste Stufe der Ladung überlässt, die nicht aufgehoben wurde. Die Reihenfolge, in der die Kräfte an die Reihe kommen, folgt ihren Längenskalen: die starke im Femtometer, die elektrische im Zehntel des Nanometers, die Gravitation, die nirgends abgeschirmt wird, erst jenseits des Moleküls. Hier weicht die Reihe von Hegels Figur ab, in der ein und dieselbe Bestimmung durch alle Stufen geht und sich an jeder aufhebt. In der Reihe gehen mehrere Bestimmungen nebeneinander, und jede wird an ihrem Ort aufgehoben; was die Stufen verbindet, ist nicht eine Substanz, die sich wandelt, sondern der Wechsel dessen, was jeweils bindet.
+
+%=====================================================================
+\section{Wo die Aufhebung endet}
+\label{sec:grenze}
+
+Was ein gebundenes Ganzes nach außen zeigt, hat zwei Gestalten, und keine zeigt das Ganze. Die erste ist der Rest der Kraft, spezifisch und verkürzt; er reicht bis zum Nachbarn. Die zweite ist das Gewicht. Die innere Bindung des Nukleons erscheint nach außen vollständig als Masse, denn Energie hat nur ein Vorzeichen und lässt sich nicht abschirmen; rund neunundneunzig Prozent der Masse der gewöhnlichen Materie ist eingeschlossene Bewegung und Feldenergie. Das Gewicht summiert sich ohne Grenze. Aber es ist gleichgültig gegen die Art: Stoffe verschiedener Zusammensetzung fallen gleich schnell, und die Gleichheit ist auf einen Teil in $10^{15}$ gemessen. Das Gewicht verrät nichts über die Art.
+
+\Randlesart In der Darstellung der Stufen ist darin das Verhältnis von Qualität und Quantität wiedererkannt worden, wie Hegel es in der Lehre vom Sein bestimmt: Qualität als die Bestimmtheit, mit deren Verlust etwas aufhört, dieses zu sein; Quantität als die gleichgültige Bestimmtheit, die sich ändern kann, ohne dass die Sache eine andere wird. Der Rest trägt das Was, das Gewicht das Wieviel. Was hier hinzukommt, ist die Folge für die Figur. Die Aufhebung setzt Gegensätze voraus: Nur was ein Gegenteil hat, kann sich in einem Ganzen aufheben, und nur was sich aufhebt, hinterlässt einen Rest, der eine neue Bestimmtheit trägt. Die Energie hat kein Gegenteil. Sie hebt sich nicht auf, sie summiert sich; sie hinterlässt keinen Rest, sondern sich selbst; und was sie nach außen trägt, ist keine Art, sondern eine Menge. Die Dialektik reicht im Aufbau genau so weit wie die Gegensätze der Ladung, auf den Sprossen $\C$, $\HH$, $\Oc$, auf denen Ladungen in Gegensätzen vorkommen. Auf der Sprosse $\R$, auf der es keinen Gegensatz gibt, hört sie auf. Das Gewicht ist ihr Ende, und die Gravitation, die in keiner der Stufen einen eigenen Ort hat und am Ende als Summe aller Stufen wiederkehrt, ist das Nichtdialektische an der Reihe.
+
+Das entscheidet auch die Stelle, die in Abschnitt~\ref{sec:nullteiler} offen geblieben ist. Hegel sagt in der Enzyklopädie, das Innere und das Äußere seien derselbe Inhalt, und er hält Haller entgegen, der klagt, ins Innere der Natur dringe kein erschaffener Geist, Goethes Antwort: Natur habe weder Kern noch Schale, alles sei sie mit einem Male. Am Nukleon gilt beides, und es gilt an verschiedenen Größen. Das Innere erscheint vollständig, als Gewicht, denn nichts von seiner Energie bleibt innen; darin hat Hegel recht, und Goethe. Das Innere erscheint nicht, als Farbe, denn nichts von seiner Art tritt heraus; darin hat Haller recht, für die Farbe und nur für sie. Und die Vermittlung ist der Rest, der die Art heraustragt, aber verkürzt. Was Hegels Satz nicht vorsieht, ist, dass das Innere auf zwei Weisen nach außen tritt und dass die Weise, in der es vollständig erscheint, gerade die ist, in der es nichts über sich sagt. Die Entsprechung endet hier nicht, aber sie wird zu einer Auskunft über Hegel: Der Satz von der Einheit des Inneren und Äußeren gilt im Aufbau für die Quantität ohne Rest und für die Qualität nur mit Rest.
+
+Und noch eines ist hier zu sagen, weil es sonst als Ergebnis erschiene, was Setzung ist. Hegels Figur hat einen Kreis: Das Wahre ist das Ganze, das Resultat setzt seinen Anfang voraus, das Ende ist der Zweck, auf den der Anfang zulief. Die Reihe hat diesen Kreis nicht. Sie beginnt mit der Raumzeit als Rahmen und endet nicht mit ihr, sondern mit einer Summe, die die Raumzeit krümmt; aber keine Stufe ist auf diese Summe hin angelegt. Sie entsteht, weil die Energie kein Gegenteil hat, das sie aufheben könnte. Das Ende der Dialektik ist nicht ihr Ziel, sondern der Punkt, an dem ihre Voraussetzung, der Gegensatz, fehlt. Wer die Entsprechung mit Hegel so weit treibt, dass die Summe zum Resultat wird, hat sie an genau der Stelle überzogen, an der sie aufhört.
+
+%=====================================================================
+\section{Die Gegenprobe}
+\label{sec:gegenprobe}
+
+Wer Dreischritte sucht, findet Dreischritte. Das ist zu zählen, nicht zu beteuern. Die Zahlenwand verdoppelt ihre Summe von Zeile zu Zeile, $1,2,4,8,16,\ldots$ bis $256$, und jede dieser acht Verdopplungen lässt sich als Einheit, Zweiheit, Einheit lesen: ein Bestand, seine Verdopplung, der neue Bestand. Ebenso jede Sprosse der Divisionsalgebren, jede Trennung und jeder Zusammenfluss der Reihe der Stufen. Die Dreizahl der Momente zeichnet also keine Stelle aus, und ein Aufsatz, der die Entsprechung auf sie stützte, hätte nichts gezeigt.
+
+Was kennzeichnend ist, sind die Züge, die der Reihe nach vorgeführt wurden, und keiner von ihnen ist an der Dreizahl abzulesen.
+
+\begin{itemize}[leftmargin=1.6em,itemsep=2pt]
+\item Die Differenz ist vor ihrer Setzung da. Die Zweiheit der Lesungen liegt auf den gemeinsamen Sprossen, gerechnet als Isomorphie bis $\HH$ und als Nichtisomorphie ab der Dimension acht. Das Schema hat eine Einheit, die sich teilt; die Sache hat eine Einheit, die ihre Teilung an sich trägt und an einer bestimmten Stelle setzen muss.
+\item Jede Setzung kostet, und die Liste der Kosten ist ein Theorem. Ordnung, Kommutativität, Assoziativität oder Division: Das Schema kennt keinen Preis; die Sache ist durch ihn bestimmt.
+\item Kein Bild ohne Nullteiler. Die Seite, die zeigt, kann auslöschen; die Seite, die sich hält, zeigt nichts. Das Schema kennt keinen Unterschied der beiden Momente der Zweiheit; die Sache verteilt auf sie das Erscheinen und das Bestehen.
+\item Der Weg, der endet, kehrt als Klammer wieder. Das Schema hat eine Richtung, in der das Aufgehobene weitergeht; die Sache hat zwei Zinken, auf die die Momente des Aufhebens verteilt sind, und eine Schließung, die sie nachträglich vereint, ohne die Verteilung aufzuheben.
+\end{itemize}
+
+Diese Züge sind es, die einen Leser Hegel wiedererkennen lassen sollten, und nicht die Dreizahl. Wo sie fehlen, fehlt die Entsprechung, auch wenn drei Schritte da sind. Und die Stellen, an denen die Entsprechung bricht, seien noch einmal beisammen genannt, damit sie nicht in den Abschnitten verstreut bleiben.
+
+\begin{itemize}[leftmargin=1.6em,itemsep=2pt]
+\item Bei Hegel ist die Entzweiung die Bewegung eines Ganzen; an der Gabel sind es zwei Operationen, die Verdopplung der Zahl und die des Bestands, und kein Stamm. Die Entzweiung ist die der Lesung, nicht der Algebra.
+\item Bei Hegel geht das Aufgehobene als höhere Bestimmung weiter; an der Gabel geht nur die zerfallene Seite weiter, die ungeteilte bleibt stehen. Erheben und Bewahren liegen auf verschiedenen Zinken.
+\item Bei Hegel sind Inneres und Äußeres derselbe Inhalt; am Nukleon erscheint das Innere auf zwei Weisen, vollständig ohne Art und mit Art nur als Rest.
+\item Bei Hegel geht eine Bestimmung durch alle Stufen und hebt sich an jeder auf; in der Reihe wird an jeder Stufe eine andere Ladung aufgehoben, und die nächste Stufe trägt die, die nicht aufgehoben wurde.
+\item Bei Hegel schließt sich die Bewegung zum Kreis; die Reihe endet in einer Summe, auf die nichts angelegt ist.
+\end{itemize}
+
+Was von den Zeit- und Raumbestimmungen der Wand hier berührt wird, sei ausdrücklich unberührt gelassen. Der Umlauf $\omega$ ist ein Verhältnis, das sich unter bestimmten Bedingungen einstellt; dass die Zeit real und der Raum imaginär gesetzt ist, ist eine Festlegung, die die Rechnungen nicht brauchen. Hegels Werden, die unruhige Einheit von Sein und Nichts, mag an den Umlauf erinnern. Es entscheidet hier nichts, und es soll nichts entscheiden, am wenigsten die Frage, ob dem Räumlichen auf der Ebene der Form ein eigener Erzeuger zukommt.
+
+%=====================================================================
+\section*{Schluss}
+\addcontentsline{toc}{section}{Schluss}
+
+Zweimal ist die Figur aufgetreten. Klein: eine Eins, ein Schritt, ein Produkt, das umläuft. Groß: eine Leiter mit zwei Lesungen, eine Gabel, ein Atom. Ob es dieselbe Figur ist oder zwei, ist am Ende nicht entschieden, und die Frage sei offen gelassen, mit dem Indiz, das für die Einheit spricht: Beide Male ist das Dritte ein Produkt mit einem Vorzeichen, das die Ordnung der Momente festhält. Im Kleinen ist es die Antivertauschung, im Großen der Vertex, in dem die Kraft auf die Materie wirkt und nicht umgekehrt. Und beide Male ist die Zweiheit nicht die zweier Verschiedener, sondern die zweier Gleicher, die verschieden gestellt sind: die beiden Wechsel, die einander gleich sind bis auf das, was sie tragen; die beiden Lesungen, die auf denselben Algebren nicht zu unterscheiden sind.
+
+Was der Vergleich lehrt, lässt sich in einem Satz sagen und in einem zweiten begrenzen. Wo die Sache algebraisch ist, hat die Dialektik eine Rechnung: Die bestimmte Negation ist die Antivertauschung, die Setzung der Differenz ist die Gabel, die Einheit mit der Differenz als Moment ist das Produkt, das Aufheben ist die Klammer. Und wo die Sache physisch ist, hat die Dialektik eine Grenze: Sie reicht so weit wie die Gegensätze der Ladung, und das, was nur ein Vorzeichen hat, liegt außerhalb ihrer. Beides zusammen ist mehr, als eine Entsprechung gewöhnlich hergibt. Sie sagt nicht nur, wo Hegels Figur passt, sondern wo sie aufhört zu passen, und warum: nicht, weil die Figur falsch wäre, sondern weil ihre Voraussetzung, der Gegensatz, in der Natur nicht überall gegeben ist. Die Energie ist der Fall, in dem es nichts zu entzweien gibt. Sie ist darum auch der Fall, in dem nichts aufgehoben wird und alles bleibt: als Gewicht, das sich summiert, bis es die Raumzeit krümmt, mit der die Reihe begonnen hat.
+
+%=====================================================================
+\newpage
+\section*{Apparat}
+\addcontentsline{toc}{section}{Apparat}
+
+\subsection*{1\quad Statustafel}
+
+Die Marken: \emph{Festlegung} ist eine Setzung, die gewählt und nicht bewiesen wird. \emph{Theorem} ist bewiesene Mathematik. \emph{Satz} ist ein durch vollständige Rechnung erzwungener Zusammenhang, Beleg: Lauf mit Zusicherung. \emph{Befund} ist gemessen oder gerechnet. \emph{These} ist eine Entsprechung, die sich prüfen, aber nicht herleiten lässt. \emph{Deutung} ist eine Lesart. \emph{Offen} ist eine ungeklärte Frage. Die Zeichen am Rand: \EB\ Befund, Satz, Theorem; \EE\ These; \EL\ Deutung.
+
+\begin{description}[itemsep=1pt,font=\normalfont\bfseries]
+\item[Festlegung:] Hegel als Logik der Darstellung, nicht als Prozess der Natur
+\item[Festlegung:] Dialektik als Lehre der Verbindungen von Unterscheidungen
+\item[Festlegung:] Zeit real, Raum imaginär; die Zeit- und Raumbestimmungen der Wand bleiben unberührt
+\item[Festlegung:] $\Cl(0,n)$ mit $e_i^2=-1$; Geacht der Form mit Erzeugern vom Quadrat $+1$
+\item[Theorem:] Hurwitz (Divisionsalgebren $\R$, $\C$, $\HH$, $\Oc$); Frobenius (assoziative Divisionsalgebren $\R$, $\C$, $\HH$)
+\item[Theorem:] Verlust von Ordnung, Kommutativität, Assoziativität entlang der Verdopplung; Nullteiler der Sedenionen
+\item[Theorem:] Zerfall $\Cl(0,3)\cong\HH\oplus\HH$ am zentralen Pseudoskalar mit $\omega^2=+1$
+\item[Theorem:] $\Cl(0,8)\cong\M_{16}(\R)$; Periode acht
+\item[Theorem:] Unterhalb von sieben Punkten keine projektive Ebene; die Fano-Ebene ist selbstdual
+\item[Satz:] $\omega=e_1e_2$ quadriert zu $-1$ bei gleichgerichteten Erzeugern, zu $+1$ bei gemischten; die Algebra der Zeile $1\,2\,1$ ist $\HH$
+\item[Satz:] Das Geacht der Form: acht Glieder, drei Gevierte, Schnitt im Zweier (Lauf: erzeuge\_bausteine.py)
+\item[Satz:] $\Cl(0,n)\cong\mathrm{CD}(n)$ für $n\le2$ mit vorgelegtem Isomorphismus; bei $n=3$ keine Zuordnung von Blades auf Einheiten mit Vorzeichen (Lauf P1)
+\item[Satz:] Die sieben Produkttripel der Oktaven und die sieben Blade-Tripel von $\Cl(0,3)$ sind dieselben Geraden $\{a,b,a\oplus b\}$; Inzidenz $(7,3,1)$ (Lauf P2)
+\item[Satz:] $\Oc=\HH+\HH e$ ist graduiert: $\HH e\cdot\HH e\subset\HH$; 168 Assoziativitätsverletzungen unter den Einheiten (Lauf P3)
+\item[Satz:] In $\HH$ und $\Oc$ nur die Idempotente $0$ und $1$; in $\Cl(0,3)$ sind $p_\pm$ Idempotente mit $p_+p_-=0$ (Lauf P4)
+\item[Satz:] Die sieben Linksmultiplikationen der Oktaven antivertauschen, quadrieren zu $-1$ und erzeugen Rang $64$; mit achtem Erzeuger auf $\R^{16}$ Rang $256$ (Lauf P6)
+\item[Satz:] Jede der acht Verdopplungen der Wand bis $256$ lässt sich als Dreischritt lesen; die Dreizahl ist generisch (Lauf P7)
+\item[Befund:] Neutralität des Wasserstoffatoms $2\cdot\tfrac23-\tfrac13-1=0$; Bindung $\SI{13.6}{eV}$; Dispersion $1/r^6$; Masse des Nukleons zu rund \SI{99}{\percent} Bindung; Universalität des freien Falls auf $10^{-15}$
+\item[Befund:] Je gebundene Stufe wird eine Ladung neutral (Farbe im Nukleon, elektrische Ladung im Atom); die nächste Stufe trägt eine andere (Kernladung, Masse)
+\item[These:] Kraft-Lesung und Materie-Lesung der Sprossen $\R$, $\C$, $\HH$; Nukleon unterhalb der Gabel, Hülle auf $\C$ und $\HH$
+\item[These:] Die Doppellesung ist die Differenz der Gabel an sich; die Gabel setzt sie
+\item[These:] Die Identifikation des physisch Eingeschlossenen mit der algebraisch nicht darstellbaren Seite
+\item[Deutung:] Eins, Schritt, Umlauf als unmittelbare Einheit, bestimmte Negation, Einheit mit der Differenz als Moment
+\item[Deutung:] Die Gabel als Übergang von Verschiedenheit zu Gegensatz; die Verlustliste als Bestimmung durch Negation
+\item[Deutung:] Kein Bild ohne Nullteiler als Erscheinungslogik; das Wesen muss erscheinen
+\item[Deutung:] Die Fano-Ebene als Identität der Identität und der Nichtidentität, formal
+\item[Deutung:] Das Atom als Aufhebung im gedoppelten Sinn; das dritte Moment als Auslegung
+\item[Deutung:] Die Klammer als Aufhebung des beendeten Weges
+\item[Deutung:] Die Dialektik reicht so weit wie die Gegensätze der Ladung; das Gewicht ist ihr Ende
+\item[Deutung:] Inneres und Äußeres: Hegels Satz gilt für die Quantität ohne Rest, für die Qualität nur mit Rest
+\item[Offen:] Ob die kleine und die große Figur dieselbe sind
+\item[Offen:] Ob die Händigkeit in der Minkowski-Raumzeit eine Lesart der Gabel bleibt
+\end{description}
+
+\subsection*{2\quad Abbildungen}
+
+\begin{description}[itemsep=1pt,font=\normalfont\bfseries]
+\item[Abb.~\ref{fig:geacht}] Das Geacht der Form. Gerechnet: Gruppe, Ordnungen und Untergruppen aus der Erzeugerrelation (pruefstand/erzeuge\_bausteine.py)
+\item[Abb.~\ref{fig:leitern}] Eine Leiter, zwei Lesungen, drei Einheiten. Verhältnis-Darstellung
+\item[Abb.~\ref{fig:fano}] Die Fano-Ebene auf beiden Seiten. Gerechnet: Geraden aus den Produkttripeln, Blade-Beschriftung aus $a\oplus b=c$ (pruefstand/erzeuge\_bausteine.py)
+\item[Abb.~\ref{fig:atom}] Die Aufhebung im Atom. Verhältnis-Darstellung; Zahlen sind Befund
+\end{description}
+
+\subsection*{3\quad Sachen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item Antivertauschung
+\item Aufheben, gedoppelter Sinn
+\item Bestimmte Negation
+\item Cayley-Dickson-Verdopplung
+\item Clifford-Algebra $\Cl(0,n)$, $\Cl(1,3)$
+\item Divisionsalgebra
+\item Doppellesung
+\item Einschluss der Farbe
+\item Erscheinung, Wesen
+\item Fano-Ebene, Selbstdualität
+\item Gabel
+\item Geacht, Geviert
+\item Gefüge, Glied
+\item Gewicht, Rest
+\item Graduierung $\Oc=\HH+\HH e$
+\item Idempotent, Projektor, Nullteiler
+\item Inneres und Äußeres
+\item Isomorphie der Ketten bis $\HH$
+\item Klammer, Periode acht
+\item Kraft-Leiter, Materie-Leiter
+\item Oktaven
+\item Pseudoskalar
+\item Qualität und Quantität
+\item Quaternionen
+\item Sedenionen
+\item Umlauf, Wechsel
+\item Verschiedenheit und Gegensatz
+\item Wasserstoffatom, Neutralität
+\end{itemize}
+
+\subsection*{4\quad Personen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item Arthur Cayley
+\item Leonard Eugene Dickson
+\item Gino Fano
+\item Ferdinand Georg Frobenius
+\item Johann Wolfgang von Goethe
+\item Albrecht von Haller
+\item William Rowan Hamilton
+\item Georg Wilhelm Friedrich Hegel
+\item Adolf Hurwitz
+\item Baruch de Spinoza
+\end{itemize}
+
+\subsection*{5\quad Quellen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item Hegel, G.\,W.\,F.: Differenz des Fichteschen und Schellingschen Systems der Philosophie (1801)
+\item Hegel, G.\,W.\,F.: Wissenschaft der Logik. Erstes Buch: Die Lehre vom Sein (1812, 1832), Anmerkung zum Aufheben; Zweites Buch: Die Lehre vom Wesen (1813), Die Wesenheiten oder die Reflexionsbestimmungen; Die Erscheinung
+\item Hegel, G.\,W.\,F.: Enzyklopädie der philosophischen Wissenschaften im Grundrisse (1830), §§ 79 bis 82; § 140 mit Zusatz
+\item Hegel, G.\,W.\,F.: Phänomenologie des Geistes (1807), Vorrede
+\item Goethe, J.\,W.: Allerdings. Dem Physiker (1820)
+\item Haller, A.\,v.: Die Falschheit der menschlichen Tugenden (1730)
+\item Frobenius, F.\,G.: Über lineare Substitutionen und bilineare Formen. J.\ reine angew.\ Math.\ 84 (1878) 1--63
+\item Hurwitz, A.: Über die Composition der quadratischen Formen von beliebig vielen Variablen. Nachr.\ Ges.\ Wiss.\ Göttingen (1898) 309--316
+\item Baez, J.\,C.: The Octonions. Bull.\ Amer.\ Math.\ Soc.\ 39 (2002) 145--205
+\item Lawson, H.\,B.; Michelsohn, M.-L.: Spin Geometry. Princeton University Press 1989
+\item Hwa: Der Aufbau des Physischen. Von der Raumzeit zum Molekül (2026), Kapitel Divisionsalgebren und Clifford-Reihe; Die Zeilen der Wand; Rest und Gewicht
+\item Hwa: Die Zeilen des Seins. Zeit und Raum, Natur und Geist (2026), Kapitel $1\,2\,1$; $1\,3\,3\,1$; Das Geacht und die Gabel
+\item Hwa: Die zwei Viererstrukturen (2026), Warum die Gabel bei $\HH$ liegt
+\item MICROSCOPE Collaboration: Result of the MICROSCOPE weak equivalence principle test. Class.\ Quantum Grav.\ 39 (2022) 204009
+\end{itemize}
+
+\vfill
+\sloppy
+\subsection*{Dokumentdaten}
+\begin{description}[itemsep=0pt,font=\normalfont\bfseries]
+\item[Titel:] Die Gabel und ihre Aufhebung. Der Aufbau des Physischen und die Dialektik
+\item[Datei:] die\_gabel\_und\_ihre\_aufhebung\_v01.tex mit bausteine/baustein\_geacht\_form.tex, bausteine/baustein\_fano\_beidseitig.tex
+\item[Ablage:] texte/aufsaetze/die\_gabel\_und\_ihre\_aufhebung/tex/
+\item[Version:] 1
+\item[Datum:] 25.\,09.\,2026
+\item[Prüfstand:] pruefstand/lauf\_gabel\_aufhebung.py (Läufe P1 bis P7, Zusicherungen KS-G 01 bis 04, 09; alle halten, 25.\,09.\,2026); pruefstand/erzeuge\_bausteine.py (gerechnete Abbildungen); cd\_check.py, cl03\_fano.py (Vorläufe)
+\item[Grundlage:] Konzept konzept\_die\_gabel\_und\_ihre\_aufhebung\_v01.md; Vorarbeit v02; Aufbau des Physischen v5; Die Zeilen des Seins; Kristallisationskern v09; nda\_v4\_kreuzung v19
+\item[Offen:] Hegel-Wortlaute an der Werkausgabe zu prüfen; »Algebraischer Feinschliff der Dialektik« v04 nicht eingesehen; Erdung an starter.md, Manifest, strangstatus ausstehend
+\end{description}
+
+\end{document}

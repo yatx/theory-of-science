@@ -1,0 +1,55 @@
+{
+ "sechzehn_phasen": {
+  "0": [
+   "hbar",
+   "P",
+   "T",
+   "nu"
+  ],
+  "6": [
+   "c^-1",
+   "F",
+   "k",
+   "V"
+  ],
+  "2": [
+   "c",
+   "p",
+   "L",
+   "a"
+  ],
+  "4": [
+   "c^2",
+   "L^-2",
+   "m",
+   "hbar/m"
+  ]
+ },
+ "geachte": {
+  "Z8": [
+   1,
+   "U",
+   "abelsch"
+  ],
+  "Z4xZ2": [
+   3,
+   "UUW",
+   "abelsch"
+  ],
+  "Z2xZ2xZ2": [
+   7,
+   "WWWWWWW",
+   "abelsch"
+  ],
+  "D4": [
+   3,
+   "UWW",
+   "nichtabelsch"
+  ],
+  "Q8": [
+   3,
+   "UUU",
+   "nichtabelsch"
+  ]
+ }
+}

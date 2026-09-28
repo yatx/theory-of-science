@@ -1,0 +1,24 @@
+% GERECHNET von erzeuge_bausteine.py — Phasen i^b aus den Exponenten, nicht von Hand
+\begin{tikzpicture}[>=Stealth]
+\draw[thick,grau] (0,0) circle (2.4);
+\fill[zeit] (2.400,0.000) circle (2pt);
+\fill[raum] (1.697,1.697) circle (2pt);
+\fill[zeit] (0.000,2.400) circle (2pt);
+\fill[raum] (-1.697,1.697) circle (2pt);
+\fill[zeit] (-2.400,0.000) circle (2pt);
+\fill[raum] (-1.697,-1.697) circle (2pt);
+\fill[zeit] (-0.000,-2.400) circle (2pt);
+\fill[raum] (1.697,-1.697) circle (2pt);
+\node[font=\small,zeit!80!black] at (2.750,0.000) {$1$};
+\node[font=\small,zeit!80!black] at (0.000,2.750) {$i$};
+\node[font=\small,zeit!80!black] at (-2.750,0.000) {$-1$};
+\node[font=\small,zeit!80!black] at (-0.000,-2.750) {$-i$};
+\node[font=\scriptsize,align=center] at (3.650,0.000) {$\hbar$, $P$, $T$, $\nu$};
+\node[font=\scriptsize,align=center] at (-0.000,-3.650) {$c^{-1}$, $F$, $k$, $V$};
+\node[font=\scriptsize,align=center] at (0.000,3.650) {$c$, $p$, $L$, $a$};
+\node[font=\scriptsize,align=center] at (-3.650,0.000) {$c^2$, $L^{-2}$, $m$, $\hbar/m$};
+\node[font=\small,raum!80!black,fill=white,inner sep=1pt] at (1.273,1.273) {$q$};
+\node[font=\small,raum!80!black,fill=white,inner sep=1pt] at (-1.273,-1.273) {$\psi$};
+\node[font=\small,raum!80!black,fill=white,inner sep=1pt] at (-0.000,-1.800) {$q\psi$};
+\node[font=\scriptsize,align=center] at (0,0) {Phase $i^{\,b}$\\unter $L=iT$};
+\end{tikzpicture}

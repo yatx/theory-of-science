@@ -1,0 +1,263 @@
+\documentclass[11pt,a4paper]{article}
+% ---------------------------------------------------------------- Präambel (nach der Mappe des Aufbaus)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,margin=2.6cm,marginparwidth=1.9cm,marginparsep=3mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{siunitx}
+\sisetup{locale=DE,group-minimum-digits=4,output-decimal-marker={,}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing,decorations.markings,shapes.geometric,fit,backgrounds,patterns}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\parskip}{2pt plus 1pt}
+\definecolor{zeit}{RGB}{176,58,46}
+\definecolor{raum}{RGB}{31,97,141}
+\definecolor{ferm}{RGB}{30,110,70}
+\definecolor{bos}{RGB}{160,90,20}
+\definecolor{grau}{RGB}{110,110,110}
+\definecolor{befund}{RGB}{40,40,40}
+\definecolor{entspr}{RGB}{31,97,141}
+\definecolor{lesart}{RGB}{160,90,20}
+\newcommand{\EB}{\textcolor{befund}{$\blacksquare$}}
+\newcommand{\EE}{\textcolor{entspr}{$\blacklozenge$}}
+\newcommand{\EL}{\textcolor{lesart}{$\bigcirc$}}
+\newcommand{\Randlesart}{\marginpar{\raggedright\footnotesize\textcolor{lesart}{$\bigcirc$\,Lesart}}}
+\newcommand{\Randentspr}{\marginpar{\raggedright\footnotesize\textcolor{entspr}{$\blacklozenge$\,Entsprechung}}}
+\newcommand{\Randbefund}{\marginpar{\raggedright\footnotesize\textcolor{befund}{$\blacksquare$\,Befund}}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\Oc}{\mathbb O}
+\newcommand{\Cl}{\mathrm{Cl}}
+\newcommand{\M}{\mathrm M}
+
+\title{Das Vorzeichen, das den Sphären fehlt\\[4pt]\large Die kleine und die große Figur des Aufbaus}
+\author{Hwa}
+\date{}
+\author{Hwa}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Im Aufbau des Physischen tritt eine Figur zweimal auf: klein in der Zeile $1\,2\,1$, wo zwei antivertauschende Erzeuger ein Produkt bilden, das umläuft; groß in den Sphären, wo Kraft und Materie ein Produkt bilden, den Kontakt, dessen Quadrat in die Mechanik zurückfällt. Ob es dieselbe Figur ist, war offen. Die Antwort ist gerechnet: Die Sphären sind das Geacht der Form ohne Vorzeichen. Vergisst man in der Gruppe aus zwei Erzeugern und ihren Vorzeichen das Vorzeichen, so bleibt die Kleinsche Vierergruppe der Paritäten, mit denselben Erzeugern und demselben Produkt. Was verloren geht, ist zweierlei in einem: die Ordnung der Faktoren und der Umlauf. Der Kontakt ist ein Wechsel, kein Umlauf. Das Vorzeichen bleibt nicht aus, es geht an einen anderen Ort: in die Phase $i^{\,b}$, die jede Größe unter der Setzung $L=iT$ trägt, und dort bildet es die zyklische Acht, den reinen Umlauf, mit den halbzahligen Sphären auf den achten Einheitswurzeln. Die kleine Figur hält Wechsel und Umlauf in einer Gruppe; die große verteilt sie auf zwei. Eine Gegenprobe über alle Gruppen der Ordnung acht zeigt, dass nicht die Zahl der Gevierte kennzeichnet, sondern ihre Mischung.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+%=====================================================================
+\section*{Vorbemerkung: eine offene Frage}
+\addcontentsline{toc}{section}{Vorbemerkung}
+
+Am Ende der Untersuchung über die Gabel und ihre Aufhebung blieb eine Frage stehen, mit einem Indiz und ohne Entscheidung. Die Figur der Einheit, die ihre Differenz als Moment enthält, war zweimal gefunden worden: klein in der Zeile $1\,2\,1$, wo das Produkt zweier antivertauschender Erzeuger etwas ist, was keiner von beiden für sich hat, und groß in den Sphären, wo der Kontakt zwischen Kraft und Materie das Produkt der beiden Sphären ist, die sie tragen. Das Indiz für die Einheit der beiden Figuren lautete: Beide Male ist das Dritte ein Produkt mit einem Vorzeichen, das die Ordnung der Faktoren festhält. Das Indiz ist zu prüfen, und die Prüfung ergibt, dass es zur Hälfte falsch ist. Das Produkt der Sphären hat kein Vorzeichen und keine Ordnung der Faktoren. Gerade darum aber lässt sich die Frage entscheiden, und die Entscheidung sagt mehr, als das Indiz versprochen hatte.
+
+Die Ebene ist die der Rechnung, soweit es um Gruppen geht, und die der Entsprechung, soweit die Gruppen an die Physik gelegt werden. Deutung kommt erst am Ende und wird als solche gekennzeichnet. Die Statustafel führt jede Behauptung mit ihrer Marke; im laufenden Text wird nicht mit Marken gesprochen.
+
+%=====================================================================
+\section{Die kleine Figur}
+\label{sec:klein}
+
+Zwei Erzeuger, die antivertauschen, $e_1e_2=-e_2e_1$, erzeugen mit ihren Vorzeichen eine Gruppe von acht Gliedern: $\pm1$, $\pm e_1$, $\pm e_2$, $\pm\omega$ mit $\omega=e_1e_2$. Welche Gruppe das ist, hängt an den Quadraten der Erzeuger, und die Lehre von den Zeilen hat den Fall der Wechsel vorgeführt, Erzeuger mit Quadrat $+1$: Dann stehen fünf Glieder im Takt zwei, sie nehmen sich mit einem Doppelschritt zurück, und zwei im Takt vier, $\omega$ und $-\omega$, die erst über $1\to\omega\to-1\to-\omega\to1$ zurückkehren. Diese Acht enthält genau drei Gevierte, zwei Kleinsche, die je einen Wechsel tragen, und ein zyklisches, das Geviert des Umlaufs; je zwei schneiden sich im Zweier $\{1,-1\}$. Das ist das Geacht der Form.
+
+Die Rechnung lässt sich auf die anderen Signaturen ausdehnen, und das Ergebnis gehört hierher, weil es zeigt, was das Vorzeichen leistet. Sind beide Erzeuger Wechsel, so gibt es einen Umlauf und zwei Wechsel-Gevierte. Ist einer ein Wechsel und einer ein Umlauf, Quadrate $+1$ und $-1$, so ist ihr Produkt wieder ein Wechsel, und die Gevierte sind wie zuvor: eines zyklisch, zwei Kleinsche, nur dass jetzt der zweite Erzeuger den Umlauf trägt und das Produkt den Wechsel. Sind beide Erzeuger Umläufe, Quadrate $-1$, so ist auch ihr Produkt ein Umlauf, und alle drei Gevierte sind zyklisch: Das ist die Gruppe der Einheiten der Quaternionen, $\pm1$, $\pm i$, $\pm j$, $\pm k$, in der außer $\pm1$ nichts im Takt zwei steht. Drei Signaturen, zwei Gruppen: die erste und die zweite Signatur geben dieselbe Gruppe, die dritte eine andere. In allen drei Fällen ist die Gruppe nicht kommutativ, denn die Antivertauschung ist von der Signatur unabhängig; und in allen drei Fällen sind genau drei Gevierte da, und je zwei schneiden sich im Zweier. Was die Signatur ändert, ist nicht die Zahl der Gevierte, sondern ihre Art: ein Umlauf und zwei Wechsel, oder drei Umläufe.
+
+Das Vorzeichen leistet also zweierlei, und die beiden Leistungen sind zu unterscheiden, weil sie sich gleich trennen werden. Erstens die Ordnung der Faktoren: $e_1e_2$ und $e_2e_1$ sind verschieden, und ihr Unterschied ist das Vorzeichen. Zweitens den Umlauf: Ein Glied, dessen Quadrat $-1$ ist, kehrt nicht im Doppelschritt zurück, sondern erst über die Gegenstellung. Beides ist am Vorzeichen aufgehängt, aber es ist nicht dasselbe. Die Antivertauschung gibt es auch dort, wo kein Umlauf ist, wenn man die Quadrate anders setzt und das Produkt zum Wechsel wird; und den Umlauf gibt es auch dort, wo nichts antivertauscht, in der zyklischen Gruppe der Potenzen von $i$. Die kleine Figur hat beides in einer Gruppe, und darum ist sie so dicht: Sie ist die kleinste Gestalt, in der Ordnung und Umlauf zusammen vorkommen.
+
+%=====================================================================
+\section{Die große Figur}
+\label{sec:gross}
+
+Die Sphären ordnen nicht Teilchen, sondern Größen. Bei $\hbar=1$ und $k_B=1$, mit der Lichtgeschwindigkeit als Größe und der Ladung ohne eigene Grundeinheit, hat jede physikalische Größe die Dimension $T^aL^b$, eine Potenz der Zeit und eine der Länge, und die Exponenten können ganzzahlig oder halbzahlig sein. Nach dieser Parität zerfallen die Größen in Klassen: ganz und ganz die Mechanik, Zeit, Länge, Masse, Energie, jede Wirkungsdichte; halb und halb die Ladung, das Potenzial, die Feldstärke, alle Kopplungen vom Typ der Ladung; ganz und halb die Wellenfunktion; halb und ganz die geladene Wellenfunktion. Unter Multiplikation der Größen addieren sich die Exponenten und damit die Paritäten, und die Klassen bilden die Kleinsche Vierergruppe: Jede Sphäre kehrt im Quadrat in die erste zurück, und je zwei ergeben die dritte. Das Produkt von Ladung und Wellenfunktion ist die geladene Wellenfunktion, der Vertex, in dem die Kraft an die Materie greift; und sein Quadrat fällt in die Mechanik zurück, denn $q^2$ ist der Dimension nach eine Geschwindigkeit und $\bar\psi\psi$ eine Dichte.
+
+Zwei Züge dieser Gruppe sind in der Darstellung der Stufen ausdrücklich festgehalten, und beide sind für den Vergleich entscheidend. Der erste: Die drei Sphären außer der ersten sind gleichrangig. Je zwei von ihnen erzeugen die Gruppe, jede Vertauschung der drei ist ein Automorphismus, und dass Ladung und Wellenfunktion als Erzeuger genommen werden und die geladene Wellenfunktion als ihr Produkt, ist keine Aussage der Gruppe, sondern eine physikalische Setzung: Ladung und Wellenfunktion werden unabhängig voneinander gemessen, die geladene Wellenfunktion nicht. Der zweite: Beide zusammen ergeben die geladene Wellenfunktion, gleich in welcher Reihenfolge. Das steht so in der Bildunterschrift zur Erzeugerkette, und es ist kein Nebensatz. Die Addition von Paritäten ist kommutativ. Es gibt in den Sphären keine Ordnung der Faktoren, und es gibt keinen Umlauf: Jedes Quadrat ist die erste Sphäre, alles steht im Takt zwei.
+
+%=====================================================================
+\section{Dieselbe Figur, ohne Vorzeichen}
+\label{sec:quotient}
+
+Nun lege man beides übereinander. In der Gruppe aus zwei Erzeugern und ihren Vorzeichen vergesse man das Vorzeichen: Man setze $-1$ gleich $1$ und darum $-e_1$ gleich $e_1$, $-e_2$ gleich $e_2$, $-\omega$ gleich $\omega$. Was bleibt, sind die Klassen $1$, $e_1$, $e_2$, $\omega$, und ihr Produkt ist die Verknüpfung der Bitmuster, mit denen man die Erzeuger zählt: $e_1$ mal $e_2$ ist $\omega$, $e_1$ mal $\omega$ ist $e_2$, und jedes Quadrat ist $1$. Das ist die Kleinsche Vierergruppe, und zwar nicht irgendeine, sondern die mit denselben Erzeugern und demselben Produkt wie die Sphären: $e_1$ auf die Ladung, $e_2$ auf die Wellenfunktion, $\omega$ auf die geladene Wellenfunktion, $1$ auf die Mechanik. Die Rechnung ist für alle drei Signaturen dieselbe, denn der Quotient sieht die Quadrate nicht: Ob die Erzeuger Wechsel oder Umläufe waren, im Quotienten sind alle Glieder im Takt zwei.
+
+\begin{figure}[h]
+\centering
+\input{bausteine/baustein_quotient}
+\caption[Das Geacht der Form und die Sphären]{Oben das Geacht der Form für zwei Wechsel; unten die Sphären. Vergisst man das Vorzeichen, so fallen die Spalten zusammen, und die Gruppe der acht wird zur Gruppe der Paritäten. Gerechnet aus der Erzeugerrelation; die Zuordnung der Erzeuger zu Ladung und Wellenfunktion folgt der physikalischen Setzung.}
+\label{fig:quotient}
+\end{figure}
+
+Damit ist die Frage entschieden, und die Entscheidung hat zwei Seiten. Die große Figur ist die kleine ohne Vorzeichen. Das ist nicht ein Vergleich, sondern ein Quotient: Die Sphären sind das Bild des Geachts der Form unter der Abbildung, die das Vorzeichen vergisst, und diese Abbildung ist ein Homomorphismus mit dem Kern $\{1,-1\}$. Was die Figur ausmacht, zwei Erzeuger und ihr Produkt, das in die Eins zurückkehrt, ist auf beiden Seiten dasselbe. Und zugleich ist die große Figur ärmer, und zwar um genau das, was das Vorzeichen leistet: Sie hat keine Ordnung der Faktoren, und sie hat keinen Umlauf. Der Kontakt zwischen Kraft und Materie ist kommutativ, und er ist ein Wechsel. Die Lehre von den Zeilen hat für dieses Verhältnis an anderer Stelle einen Satz: Boole ist Clifford ohne Vorzeichen, und die Signatur wohnt genau dort, wo Boole nichts sieht, in den Quadraten. Die Sphären sind Boole. Sie sehen, welche Parität eine Größe hat, und sie sehen nicht, was ihr Quadrat ist, außer dass es in der ersten Sphäre liegt.
+
+Das korrigiert das Indiz, mit dem die Untersuchung über die Gabel geendet hatte. Dort hieß es, das Dritte sei beide Male ein Produkt mit einem Vorzeichen, das die Ordnung der Faktoren festhält; im Großen sei es der Vertex, in dem die Kraft auf die Materie wirkt und nicht umgekehrt. Das Zweite ist falsch, jedenfalls für die Sphären. Die Sphäre des Kontakts weiß nicht, ob die Kraft auf die Materie wirkt oder die Materie auf die Kraft; sie weiß nur, dass die Parität der Ladung und die Parität der Wellenfunktion zusammen die Parität des Vertex geben, und das ist in jeder Reihenfolge wahr. Die Asymmetrie zwischen Kraft und Materie, die es in der Physik gibt, liegt nicht in der Parität. Sie liegt darin, dass der Vertex in der Wellenfunktion bilinear und im Potenzial linear ist, $\bar\psi\gamma^\mu A_\mu\psi$, zwei Grade gegen einen; und sie liegt darin, dass die Materie den Platz einnimmt und die Kraft ihn vermittelt. Beides sind Unterschiede des Grades und der Rolle, nicht des Vorzeichens. Was das Indiz richtig gesehen hatte, ist nur dies: Das Dritte ist ein Produkt. Das genügt für die Einheit der Figur, aber es genügt nicht für ihre Gleichheit.
+
+%=====================================================================
+\section{Wo das Vorzeichen bleibt}
+\label{sec:phasen}
+
+Das Vorzeichen, das den Sphären fehlt, ist in der Welt der Größen nicht abwesend. Es sitzt an einem anderen Ort, und der Ort ist eine Setzung, die die Darstellung der Stufen als Lesart führt: Die Länge lässt sich als imaginäre Zeit setzen, $L=iT$, mit Anhalt an Minkowskis Schreibweise, in der die Signatur der Raumzeit als euklidische Form mit einer imaginären Koordinate erscheint. Gemeint ist keine Drehung der Zeit ins Imaginäre; imaginär gesetzt wird das Räumliche. Unter dieser Setzung bekommt jede Größe $T^aL^b$ die Phase $i^{\,b}$, und die Phase hängt nur am Längenexponenten.
+
+Für die sechzehn benannten Größen der ersten Sphäre ist das vorgerechnet: Sie stehen zu je vieren auf den Phasen $1$, $i$, $-1$, $-i$. Auf der Phase $1$ das Wirkungsquantum, die Leistung, die Zeit und die Frequenz, alle mit einem Längenexponenten, der durch vier teilbar ist; auf der Phase $i$ die Lichtgeschwindigkeit, der Druck, die Länge und die Beschleunigung; auf $-1$ das Quadrat der Lichtgeschwindigkeit, die Flächendichte, die Masse und das Wirkungsquantum durch die Masse; auf $-i$ der Kehrwert der Lichtgeschwindigkeit, die Kraft, die Wellenzahl und das Volumen. Das ist das Geviert des Umlaufs, $1\to i\to-1\to-i\to1$, dasselbe Geviert, das im Geacht der Form die Potenzen von $\omega$ bilden. In der Lehre von den Zeilen heißt es das Phasen-Geviert, eine zeitliche Klasse und drei räumlich gestufte.
+
+Nimmt man alle Sphären hinzu, so wird aus dem Geviert eine Acht. Die Größen der Ladung und der Wellenfunktion haben halbzahlige Längenexponenten, und $i^{\,b}$ mit halbzahligem $b$ ist eine primitive achte Einheitswurzel: Die Ladung mit $b=\tfrac12$ steht auf $e^{i\pi/4}$, die Wellenfunktion mit $b=-\tfrac32$ auf $e^{-3i\pi/4}$; die geladene Wellenfunktion mit $b=-1$ steht auf $-i$, wieder auf einer vierten Wurzel, denn ihr Längenexponent ist ganz. Die Phasen aller Größen bilden die zyklische Gruppe der Ordnung acht, erzeugt von $e^{i\pi/4}$. Die Größen mit ganzem Längenexponenten, die erste und die geladene Sphäre, sitzen auf den vier vierten Wurzeln; die mit halbem, die Ladung und die Wellenfunktion, auf den vier primitiven achten. Die Parität des Längenexponenten, die eine der beiden Achsen der Sphären ist, wird in der Phase zur Frage, ob eine Wurzel vierte oder primitive achte ist. Die andere Achse, die Parität des Zeitexponenten, sieht die Phase nicht.
+
+\begin{figure}[h]
+\centering
+\input{bausteine/baustein_phasen}
+\caption[Die Phasen der Größen]{Die Phasen $i^{\,b}$ unter $L=iT$ als zyklische Acht. Auf den vierten Einheitswurzeln die sechzehn benannten Größen der ersten Sphäre, zu je vieren; auf den primitiven achten die Leitgrößen der Ladung und der Wellenfunktion; die geladene Wellenfunktion wieder auf einer vierten. Gerechnet aus den Exponenten.}
+\label{fig:phasen}
+\end{figure}
+
+Diese Acht ist die andere Acht. Das Geacht der Form hat drei Gevierte, und je nach Signatur ist eines oder sind alle drei Umläufe; die zyklische Acht der Phasen hat genau ein Geviert, den Umlauf der vierten Wurzeln, und nichts sonst. Sie ist der reine Umlauf: Kein Glied außer $1$ und $-1$ steht im Takt zwei, und die Gruppe ist kommutativ. Was die Sphären nicht haben, das Vorzeichen, ist hier ganz und ohne Beimischung; was das Geacht der Form dazu hat, die Antivertauschung, fehlt. So verteilt sich, was die kleine Figur in einer Gruppe hält, in der großen auf zwei: Die Sphären tragen die Wechsel, drei an der Zahl, alle kommutativ, ohne Umlauf; die Phasen tragen den Umlauf, einen, kommutativ, ohne Wechsel. Setzt man beides zusammen, Parität des Zeitexponenten und Phase des Längenexponenten, so entsteht das Produkt einer Zweiergruppe mit der zyklischen Acht, und dieses Produkt ist kommutativ. Es ist nicht das Geacht der Form, denn das Geacht der Form ist es nicht. Die große Figur ist die kleine ohne Vorzeichen, und mit Vorzeichen ist sie eine andere.
+
+%=====================================================================
+\section{Die Gegenprobe}
+\label{sec:gegenprobe}
+
+Wer Geachte sucht, findet Geachte; die Lehre von den Zeilen hat die Warnung ausgesprochen und die Zählung vorgemacht. Es gibt genau fünf Gruppen mit acht Gliedern, und die Zählung ihrer Gevierte, der Untergruppen mit vier Gliedern, ergibt: Die zyklische Acht hat eines, die Gruppe aus Zweier und Zweier und Zweier hat sieben, und die drei übrigen, das Produkt von Vierer und Zweier, die Diedergruppe und die Quaternionengruppe, haben je drei. Die Dreizahl der Gevierte ist der häufigste Fall und zeichnet nichts aus. Was die drei unterscheidet, ist die Mischung: Das Produkt von Vierer und Zweier hat zwei Umläufe und einen Wechsel und ist kommutativ; die Diedergruppe hat einen Umlauf und zwei Wechsel und ist es nicht; die Quaternionengruppe hat drei Umläufe und ist es nicht. Fünf Gruppen, fünf Mischungen: ein Umlauf; zwei Umläufe und ein Wechsel; ein Umlauf und zwei Wechsel; drei Umläufe; sieben Wechsel. Die Mischung kennzeichnet, die Zahl nicht.
+
+\begin{table}[h]
+\centering\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}l c l l >{\raggedright\arraybackslash}X@{}}
+\toprule
+Gruppe & Gevierte & Mischung & kommutativ & Ort im Aufbau\\
+\midrule
+zyklische Acht & 1 & ein Umlauf & ja & Phasen $i^{\,b}$ aller Größen\\
+Vierer mal Zweier & 3 & zwei Umläufe, ein Wechsel & ja & Phase und Zeitparität der Größen mit ganzem $b$\\
+Diedergruppe & 3 & ein Umlauf, zwei Wechsel & nein & Geacht der Form, Signaturen $(2,0)$ und $(1,1)$\\
+Quaternionengruppe & 3 & drei Umläufe & nein & Einheiten von $\HH$, Signatur $(0,2)$\\
+Zweier hoch drei & 7 & sieben Wechsel & ja & Wendungen der Operatoren, Fano-Lage\\
+\bottomrule
+\end{tabularx}
+\caption{Die fünf Gruppen der Ordnung acht nach ihren Gevierten, und wo jede im Aufbau vorkommt. Die Zählung ist gerechnet; die Orte sind Entsprechung.}
+\label{tab:geachte}
+\end{table}
+
+Und nun die Probe, die ernüchtert und zugleich schärft: Alle fünf kommen im Aufbau vor. Die zyklische Acht als Phasen der Größen. Die Diedergruppe als Geacht der Form für zwei Wechsel oder für Wechsel und Umlauf. Die Quaternionengruppe als Einheiten der Zeile $1\,2\,1$ mit zwei Umläufen. Die Gruppe aus drei Zweiern als Wendungen der sechzehn Operatoren, in der Lage der Fano-Ebene, wie die Lehre von den Zeilen gerechnet hat. Und das Produkt von Vierer und Zweier, wenn man bei den Größen mit ganzem Längenexponenten die Phase mit der Parität des Zeitexponenten zusammennimmt. Dass eine Gruppe mit acht Gliedern irgendwo auftritt, sagt darum nichts; sie treten alle auf. Was etwas sagt, ist, welche wo steht, und die Antwort ist nicht beliebig: Die Sphären selbst sind keine Acht, sondern ein Geviert, und zwar das ohne Umlauf; das Vorzeichen, das sie nicht haben, steht als reiner Umlauf in den Phasen; und die einzige Stelle, an der Wechsel und Umlauf in einer nichtkommutativen Gruppe zusammenstehen, ist die kleine Figur, das Geacht der Form. Die Gegenprobe nimmt der Gleichheit die Dreizahl und lässt der Verschiedenheit die Mischung.
+
+%=====================================================================
+\section{Wechsel und Umlauf}
+\label{sec:lesart}
+
+\Randlesart Was heißt es, dass der Kontakt zwischen Kraft und Materie ein Wechsel ist und kein Umlauf? Ein Wechsel ist eine Bestimmung, die sich mit einem Doppelschritt zurücknimmt: Das Quadrat der Ladung ist wieder Mechanik, das Quadrat der Wellenfunktion ist eine Dichte, das Quadrat des Vertex ist wieder Mechanik. Die Rückkehr ist das flache $(-a)(-a)=+a^2$, die Negation der Negation, die den Anfang wiederherstellt. Ein Umlauf ist eine Bestimmung, die durch die Gegenstellung hindurchgeht und erst nach dem zweiten Doppelschritt bei sich ankommt; sein Quadrat ist das Gegenteil des Anfangs, nicht der Anfang. Die Lehre von den Zeilen hat an der Zeile $1\,2\,1$ gesagt, dass die Rückkehr der Prinzipien nicht das flache Quadrat der Geraden ist, sondern der Umlauf, der etwas erzeugt, was keiner der beiden Erzeuger für sich hat. In den Sphären ist die Rückkehr flach. Kraft und Materie ergeben den Kontakt, der Kontakt im Quadrat ergibt die Mechanik, und nichts an dieser Rechnung geht durch eine Gegenstellung hindurch.
+
+Das ist keine Schwäche der Sphären, sondern ihre Wahrheit. Sie sind Paritätsklassen, und die Parität ist die gröbste Unterscheidung, die es gibt: gerade oder ungerade, ganz oder halb. Was sie ordnen, ordnen sie ohne Vorzeichen, und was sie darum nicht sehen, sehen sie prinzipiell nicht. Der Umlauf, der in der kleinen Figur die Einheit der Prinzipien war, ist in der großen an eine Setzung gebunden, die Länge als imaginäre Zeit, und er liegt dann nicht zwischen Kraft und Materie, sondern quer dazu, entlang des Längenexponenten, in einer Gruppe, die von den Sphären nichts weiß außer der Parität des einen Exponenten. Die Ordnung der Faktoren, die in der kleinen Figur das Vorzeichen festhielt, hat in der großen keinen Ort. Wo die Physik zwischen Kraft und Materie unterscheidet, tut sie es nach Grad und Rolle, nicht nach dem Vorzeichen eines Produkts.
+
+Die Figur der Einheit, die ihre Differenz als Moment enthält, ist darum im Großen anders gebaut als im Kleinen, und der Unterschied lässt sich sagen. Im Kleinen ist die Einheit ein Umlauf: Sie hat, was die Momente nicht haben, weil ihr Quadrat nicht der Anfang ist. Im Großen ist die Einheit ein Wechsel: Sie hat, was die Momente nicht haben, weil sie beide zugleich ist, geladen und Wellenfunktion, und ihr Quadrat ist der Anfang. Beide Male enthält das Dritte die Differenz der beiden als Moment; aber im Kleinen ist das Moment ein Vorzeichen, das die Ordnung der beiden festhält, und im Großen ist es die Parität, die beide addiert und ihre Ordnung nicht kennt. Wenn man Hegels Ausdruck der bestimmten Negation für die Antivertauschung gebrauchen darf, dann ist die Parität die Negation ohne Bestimmung: Sie sagt, dass etwas ungerade ist, und nicht, in welcher Richtung. Der Vertex ist das Zugleich von Kraft und Materie, und Zugleich ist ein kommutatives Wort.
+
+Und doch ist das Vorzeichen nicht verloren. Es ist an den Ort gegangen, an dem in der Setzung der Darstellung das Räumliche als das Imaginäre gelesen wird, und es hat dort die Gestalt des reinen Umlaufs angenommen, ohne die Antivertauschung, die es in der kleinen Figur begleitete. Die Ladung, die in den Sphären ein Wechsel ist, steht in den Phasen auf einer achten Wurzel: Ihr Quadrat ist $i$, nicht $1$; erst ihre vierte Potenz ist $-1$ und erst ihre achte der Anfang. In der Phase läuft die Ladung um, während sie in der Parität wechselt. Dasselbe Ding, zweimal gelesen, einmal ohne und einmal mit Vorzeichen; und die beiden Lesungen sind nicht dieselbe Gruppe. Das ist die genaueste Auskunft, die sich über die zwei Figuren geben lässt. Sie sind eine, wo man das Vorzeichen vergisst. Wo man es behält, ist die kleine Figur die Einheit von Wechsel und Umlauf in einer Gruppe, und die große ist ihre Zerlegung in zwei.
+
+%=====================================================================
+\section*{Schluss}
+\addcontentsline{toc}{section}{Schluss}
+
+Die offene Frage ist entschieden, in beide Richtungen. Die kleine und die große Figur sind dieselbe, wenn man das Vorzeichen vergisst: Die Sphären sind der Quotient des Geachts der Form nach $\{1,-1\}$, mit denselben Erzeugern und demselben Produkt, und die Rechnung ist für jede Signatur dieselbe. Sie sind verschieden, wenn man das Vorzeichen behält: Die kleine Figur hält die Ordnung der Faktoren und den Umlauf in einer nichtkommutativen Gruppe zusammen; die große hat die Ordnung nicht und den Umlauf nur unter einer Setzung, an einem anderen Ort und in einer kommutativen Gruppe, der zyklischen Acht der Phasen. Das Indiz, mit dem die Frage stehen geblieben war, ist zur Hälfte bestätigt und zur Hälfte widerlegt: Das Dritte ist beide Male ein Produkt, aber nur im Kleinen hält ein Vorzeichen die Ordnung der Faktoren fest. Die Sphären wissen nicht, ob die Kraft auf die Materie wirkt oder umgekehrt; die Parität ist kommutativ.
+
+Was der Vergleich darüber hinaus lehrt, ist eine Auskunft über die Acht. Alle fünf Gruppen mit acht Gliedern kommen im Aufbau vor, und darum sagt es nichts, dass eine vorkommt. Was etwas sagt, ist die Mischung der Gevierte, ein Umlauf oder drei oder keiner, und an ihr ist jede der fünf zu erkennen. Die Sphären sind keine Acht, sondern das Geviert ohne Umlauf; die Phasen sind die Acht mit nur dem Umlauf; und das Geacht der Form ist die einzige Stelle, an der beides in einer Gruppe steht. Die kleine Figur ist darum nicht ein Vorspiel der großen, sondern ihre dichteste Gestalt. Was in ihr zusammenliegt, liegt in der Welt der Größen auseinander, und was es zusammenhält, ist nur das Vergessen des Vorzeichens.
+
+%=====================================================================
+\newpage
+\section*{Apparat}
+\addcontentsline{toc}{section}{Apparat}
+
+\subsection*{1\quad Statustafel}
+
+Die Marken wie in der Untersuchung über die Gabel: \emph{Festlegung}, \emph{Theorem}, \emph{Satz} (durch vollständige Rechnung erzwungen, Beleg: Lauf mit Zusicherung), \emph{Befund}, \emph{These}, \emph{Deutung}, \emph{Offen}. Alle Läufe: pruefstand/lauf\_vorzeichen.py, sechs Zusicherungen, alle halten (25.\,09.\,2026).
+
+\begin{description}[itemsep=1pt,font=\normalfont\bfseries]
+\item[Festlegung:] $\hbar=k_B=1$, $c$ als Größe, Ladung ohne eigene Grundeinheit; Sphären als Paritätsklassen der Exponenten
+\item[Festlegung:] Ladung und Wellenfunktion als Erzeuger der Sphären, die geladene Wellenfunktion als Produkt (physikalisch begründet, gruppentheoretisch nicht ausgezeichnet)
+\item[Festlegung:] Länge als imaginäre Zeit, $L=iT$; Phase $i^{\,b}$
+\item[Theorem:] Genau fünf Gruppen der Ordnung acht
+\item[Satz:] Zwei antivertauschende Erzeuger mit ihren Vorzeichen erzeugen für die Signaturen $(2,0)$ und $(1,1)$ die Diedergruppe (ein Umlauf, zwei Wechsel), für $(0,2)$ die Quaternionengruppe (drei Umläufe); alle drei nichtkommutativ; drei Gevierte, Schnitt im Zweier (Lauf V1)
+\item[Satz:] Der Quotient nach $\{1,-1\}$ ist in allen drei Fällen die Kleinsche Vierergruppe mit den Bildern der Erzeuger als Erzeugern und dem Bild des Produkts als Produkt (Lauf V1)
+\item[Satz:] Die Sphären bilden die Kleinsche Vierergruppe der Paritäten; $S_2S_3=S_3S_2=S_4$; jedes Quadrat $S_1$; die Leitgrößen $m$, $q$, $\psi$, $q\psi$ liegen in $S_1$ bis $S_4$ (Lauf V2)
+\item[Satz:] Die sechzehn benannten Größen der ersten Sphäre stehen zu je vieren auf den Phasen $1$, $i$, $-1$, $-i$ (Lauf V3)
+\item[Satz:] Die Phasen $i^{\,b}$ aller Größen mit $b\in\tfrac12\mathbb Z$ bilden die zyklische Gruppe der Ordnung acht; ganze $b$ auf den vierten, halbe auf den primitiven achten Einheitswurzeln; genau ein Geviert (Lauf V4)
+\item[Satz:] Zeitparität und Phase zusammen bilden das Produkt einer Zweiergruppe mit der zyklischen Acht, kommutativ, nicht isomorph zum Geacht der Form (Lauf V5)
+\item[Satz:] Gevierte der fünf Gruppen der Ordnung acht: $1$, $3$, $3$, $3$, $7$; Mischungen ein Umlauf; zwei Umläufe, ein Wechsel; ein Umlauf, zwei Wechsel; drei Umläufe; sieben Wechsel (Lauf V6)
+\item[Befund:] Der Vertex $\bar\psi\gamma^\mu A_\mu\psi$ ist bilinear in der Wellenfunktion und linear im Potenzial
+\item[These:] Die Sphären als Boole; das Geacht der Form als Clifford; die Phasen als der Ort des Vorzeichens unter $L=iT$
+\item[These:] Die fünf Gruppen an ihren Orten im Aufbau (Tabelle~\ref{tab:geachte})
+\item[Deutung:] Der Kontakt als Wechsel, nicht als Umlauf; die Parität als Negation ohne Richtung
+\item[Deutung:] Die kleine Figur als Einheit von Wechsel und Umlauf, die große als ihre Zerlegung
+\item[Deutung:] Die Asymmetrie von Kraft und Materie als Sache des Grades und der Rolle, nicht des Vorzeichens
+\item[Offen:] Ob die Setzung $L=iT$ mehr trägt als die Lesbarkeit des Räumlichen als imaginär; ob dem Räumlichen auf der Ebene der Form ein eigener Erzeuger zukommt (nicht berührt)
+\end{description}
+
+\subsection*{2\quad Abbildungen}
+
+\begin{description}[itemsep=1pt,font=\normalfont\bfseries]
+\item[Abb.~\ref{fig:quotient}] Das Geacht der Form und die Sphären. Gerechnet: Gruppe, Takte und Quotient aus der Erzeugerrelation (pruefstand/erzeuge\_bausteine.py)
+\item[Abb.~\ref{fig:phasen}] Die Phasen der Größen. Gerechnet: Phasen aus den Exponenten der sechzehn und der Leitgrößen (pruefstand/erzeuge\_bausteine.py)
+\item[Tab.~\ref{tab:geachte}] Die fünf Gruppen der Ordnung acht. Gerechnet (Lauf V6); die Orte sind Entsprechung
+\end{description}
+
+\subsection*{3\quad Sachen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item Antivertauschung
+\item Boole und Clifford
+\item Diedergruppe
+\item Einheitswurzeln, vierte und achte
+\item Geacht der Form
+\item Geviert, Kleinsche Vierergruppe
+\item Homomorphismus, Quotient, Kern
+\item Kontakt, Vertex
+\item Ordnung der Faktoren
+\item Parität der Exponenten
+\item Phase $i^{\,b}$
+\item Quaternionengruppe
+\item Sechzehn benannte Größen
+\item Signatur
+\item Sphären
+\item Umlauf, Wechsel
+\item Zyklische Acht
+\end{itemize}
+
+\subsection*{4\quad Personen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item George Boole
+\item William Kingdon Clifford
+\item William Rowan Hamilton
+\item Georg Wilhelm Friedrich Hegel
+\item Felix Klein
+\item Hermann Minkowski
+\end{itemize}
+
+\subsection*{5\quad Quellen}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item Hwa: Der Aufbau des Physischen. Von der Raumzeit zum Molekül (2026), Kapitel Die Sphären; Divisionsalgebren und Clifford-Reihe, Lesart; Apparat, die sechzehn benannten Größen
+\item Hwa: Die Zeilen des Seins. Zeit und Raum, Natur und Geist (2026), Kapitel $1\,2\,1$ (Das Geacht der Form); $1\,4\,6\,4\,1$ (Die sechzehn Operatoren); Das Geacht und die Gabel (Die Gegenprobe); Die Sechzehn, die keine Zeile ist
+\item Hwa: Die Gabel und ihre Aufhebung (2026), Schluss
+\item Minkowski, H.: Raum und Zeit. Physikalische Zeitschrift 10 (1909) 104--111
+\item Hegel, G.\,W.\,F.: Wissenschaft der Logik, Einleitung (die bestimmte Negation)
+\end{itemize}
+
+\vfill
+\sloppy
+\subsection*{Dokumentdaten}
+\begin{description}[itemsep=0pt,font=\normalfont\bfseries]
+\item[Titel:] Das Vorzeichen, das den Sphären fehlt. Die kleine und die große Figur des Aufbaus
+\item[Datei:] das\_vorzeichen\_das\_den\_sphaeren\_fehlt\_v01.tex mit bausteine/baustein\_quotient.tex, bausteine/baustein\_phasen.tex
+\item[Ablage:] texte/aufsaetze/das\_vorzeichen\_das\_den\_sphaeren\_fehlt/tex/
+\item[Version:] 1
+\item[Datum:] 25.\,09.\,2026
+\item[Prüfstand:] pruefstand/lauf\_vorzeichen.py (Läufe V1 bis V6, Zusicherungen KS-V 01 bis 06, alle halten); pruefstand/erzeuge\_bausteine.py; ergebnis\_vorzeichen.json
+\item[Anlass:] die offene Frage KS-G 10 aus »Die Gabel und ihre Aufhebung« v03
+\item[Folge:] Korrektur des Schlusses der Gabel-Untersuchung (das Indiz der Ordnung der Faktoren gilt nur im Kleinen); vorgemerkt für deren v04
+\item[Offen:] Erdung an starter.md, Manifest, strangstatus ausstehend
+\end{description}
+
+\end{document}
